@@ -1,0 +1,353 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{textcomp} % text version of symbols in TS1, e.g. \textrightarrow{}
+\usepackage{amstext} % proper support of frequently used \text{} command
+
+\usepackage[left=0.9in,top=1.2in,right=0.9in,bottom=1in]{geometry} % Document margins
+\usepackage{color}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref} % Required for adding links	and customizing them
+
+\newcommand{\inspireurl}[1]{\\\href{#1}{INSPIRE-HEP entry}}
+
+\pagestyle{empty} % Removes page numbering
+\setlength{\parindent}{0in} % to remove the tab at the beginning of each paragraph
+
+\newcommand{\itab}{\hspace*{-2em}}
+\newcommand{ \tab}{\hspace*{ 2em}}
+\newcommand{\ihalftab}{\hspace*{-1em}}
+\newcommand{ \halftab}{\hspace*{ 1em}}
+
+\newcounter{counter}
+\setcounter{counter}{1} % set the counter to 1
+%\newcounter{subcounter}[counter] %If you want the subcounter to be reset to zero every time counter is increased
+%\addtocounter{counter}{1}
+%\arabic{counter}
+\newcommand{\mycount}[0]{\arabic{counter}\addtocounter{counter}{1}}
+
+\newcommand{\miniLeft}[1]{\begin{minipage}[t]{0.15\textwidth} {#1} \end{minipage}}
+\newcommand{\miniRight}[1]{\begin{minipage}[t]{0.85\textwidth} {#1} \end{minipage} \\}
+\newcommand{\mini}[2]{\miniLeft{#1} \miniRight{#2}}
+\newcommand{\Publications}[1]{\miniLeft{\begin{center} [\mycount] \end{center}}  \miniRight{#1} \\}
+
+\newcommand{\Section}[1]{\linethickness{0.8mm} \textcolor{blue}{\\ {\textbf{#1}} \vspace{-3mm} \\  \line(1,0){250}} 
+\\ } 
+
+
+\begin{document}
+
+\Section{List of Publications by Javad Komijani}
+
+\Publications
+{ J.~Komijani, P.~Petreczky and J.~H.~Weber,
+  {``Strong coupling constant and quark masses from lattice QCD,''}
+  \textit{Prog. Part. Nucl. Phys.~113, 103788 (2020)}
+  [arXiv:2003.11703].
+  \inspireurl{http://inspirehep.net/record/1788480}
+}
+
+\Publications
+{ L.~J.~Cooper \textit{et al.},
+  {``$B_c \to B_{s(d)}$ form factors from lattice QCD,''}
+  \textit{Phys.~Rev. D~102, 014513 (2020)}
+  [arXiv:2003.00914].
+  \inspireurl{http://inspirehep.net/record/1783324}
+}
+
+\Publications
+{ C.M.~Bender, J. Komijani, Q. Wang,
+  {``Nonlinear eigenvalue problems for generalized Painlev\'e equations,''}
+  \href{https://doi.org/10.1088/1751-8121/ab2bcc}{
+  \textit{J.~Phys.~A: Math. and Theor.~52, 315202 (2019)}} [arXiv:1903.10640].
+}
+
+\Publications 
+{ C.T.H.~Davies {\it et al.},
+  {``Determination of the quark condensate from heavy-light current-current correlators in full lattice QCD,''}
+  \textit{Phys.~Rev. D~100, 034506 (2019)}
+  [arXiv:1811.04305].
+  \inspireurl{http://inspirehep.net/record/1703119}
+} 
+
+\Publications 
+{ N.~Brambilla, H.~S.~Chung and J.~Komijani,
+  {``Inclusive decays of $\eta_c$ and $\eta_b$ at NNLO with large $n_f$ resummation,''}
+  \textit{Phys.~Rev. D~98, 114020 (2018)}
+  [arXiv:1810.02586].
+  \inspireurl{http://inspirehep.net/record/1697096}
+}
+
+\Publications 
+{ A.~Bazavov {\it et al.},
+  {``$|V_{us}|$ from $K_{\ell 3}$ decay and four-flavor lattice QCD,''}
+  \textit{Phys.~Rev. D~99, 114509 (2019)}
+  [arXiv:1809.02827].
+  \inspireurl{http://inspirehep.net/record/1693293}
+}
+
+
+\Publications 
+{ A.~Bazavov {\it et al.},
+  {``Up-, down-, strange-, charm-, and bottom-quark masses from four-flavor lattice QCD,''}
+  \textit{Phys.~Rev. D~98, 054517 (2018)}
+  [arXiv:1802.04248].
+  \inspireurl{http://inspirehep.net/record/1654552}
+}
+
+\Publications 
+{ A.~Bazavov {\it et al.},
+  {``$B$- and $D$-meson leptonic decay constants from four-flavor lattice QCD,''}
+  \textit{Phys.~Rev. D~98, 074512 (2018)}
+  [arXiv:1712.09262].
+  \inspireurl{http://inspirehep.net/record/1644910}
+}
+
+\Publications
+{ N.~Brambilla , J.~Komijani, A.S.~Kronfeld, A.~Vairo,
+  {``Relations between Heavy-light Meson and Quark Masses,''}
+  \textit{Phys.~Rev. D~97, 034503 (2018)}
+  [arXiv:1712.04983].
+  \inspireurl{http://inspirehep.net/record/1643281}
+}
+ 
+\Publications 
+{ J.~Komijani,
+  {``A discussion on leading renormalon in the pole mass,''}
+  \textit{JHEP 1708, 062 (2017)}
+  [arXiv:1701.00347].
+  \inspireurl{http://inspirehep.net/record/1507484}
+}
+
+\Publications
+{ J.A.~Bailey {\it et al.},
+  {``$B\ensuremath{\rightarrow}K{l}^{+}{l}^{-}$ decay form factors from three-flavor lattice QCD,''}
+  \textit{Phys.~Rev. D~93, 025026 (2016)}
+  [arXiv:1509.06235].
+  \inspireurl{http://inspirehep.net/record/1394175}
+}
+
+\Publications 
+{ J.A.~Bailey {\it et al.}, 
+  {``$|V_{ub}|$ from $B\to\pi\ell\nu$ decays and (2+1)-flavor lattice QCD,''} 
+  \textit{Phys.~Rev. D~92, 014024 (2015)}
+  [arXiv:1503.07839].
+  \inspireurl{http://inspirehep.net/record/1356283}
+}
+
+\Publications 
+{ J.A.~Bailey {\it et al.},
+  {``$B\to D\ell\nu$ form factors at nonzero recoil and $|V_{cb}|$ from 2+1-flavor lattice QCD,''}
+  \textit{Phys.~Rev. D~92, 034506 (2015)}
+  [arXiv:1503.07237].
+  \inspireurl{http://inspirehep.net/record/1355553}
+}
+  
+\Publications
+{ A.~Bazavov {\it et al.},
+  {``Gradient flow and scale setting on MILC HISQ ensembles,''}
+  \textit{Phys.~Rev. D~93, 094510 (2016)}
+  [arXiv:1503.02769].
+  \inspireurl{http://inspirehep.net/record/1351452}
+}
+  
+\Publications
+{ C.M.~Bender and J.~Komijani, 
+  {``Painlev\'e Transcendents and ${\mathcal{P}}{\mathcal{T}}$-Symmetric Hamiltonians,''}
+  \href{https://doi.org/10.1088/1751-8113/48/47/475202}{
+  \textit{J.~Phys.~A: Math. and Theor. 48, 475202 (2015)}}
+  [arXiv:1502.04089].
+  %\inspireurl{http://inspirehep.net/record/1344799}
+}
+
+\Publications
+{ A.~Bazavov {\it et al.},
+  {``Charmed and light pseudoscalar meson decay constants from four-flavor lattice QCD with physical light quarks,''}
+  \textit{Phys.~Rev. D~90, 074509 (2014)}
+  [arXiv:1407.3772].
+  \inspireurl{http://inspirehep.net/record/1306303}
+}
+
+\Publications
+{ C.M.~Bender, A.~Fring and J.~Komijani,
+  {``Nonlinear Eigenvalue Problems,''}
+  \href{https://doi.org/10.1088/1751-8113/47/23/235204}{
+  \textit{J.~Phys.~A: Math. and Theor.~47, 235204 (2014)}}
+  [arXiv:1401.6161].
+}
+
+\Publications
+{ C.~Bernard and J.~Komijani, 
+  {``Chiral Perturbation Theory for All-Staggered Heavy-Light Mesons,''}
+  \textit{Phys.~Rev. D~88, 094017 (2013)}
+  [arXiv:1309.4533].
+  \inspireurl{http://inspirehep.net/record/1254568}
+}
+
+\Publications
+{ A.~Bazavov {\it et al.},
+  {``Lattice QCD ensembles with four flavors of highly improved staggered quarks,''} 
+  \textit{Phys.~Rev. D~87, 054505 (2013)}
+  [arXiv:1212.4768].
+  \inspireurl{http://inspirehep.net/record/1208113}
+}
+
+\Publications
+{ J.~Komijani, J.~Rashed-Mohassel and A.~Mirkamali, 
+  {``Dyadic Green Functions for a Dielectric Layer on a PEMC Plane,''}
+  \href{http://www.jpier.org/PIERM/pier.php?paper=08110907}{
+  \textit{Progress in Electromagnetics Research M~6, pp. 9-22 (2009)}}.
+}
+
+\Publications
+{ J.~Komijani and J.~Rashed-Mohassel, 
+  {``Symmetrical Properties of Dyadic Green’s Functions for Mixed Boundary Conditions 
+  and Integral Representations of the Electric Fields for Problems Involving a PEMC,''} 
+  \href{https://ieeexplore.ieee.org/abstract/document/5175355}{
+  \textit{IEEE Transactions on Antennas and Propagation, vol. 57, issue 10, pp. 3199-3204 (2009)}}.
+}
+
+
+%================================
+%================================
+\Section{Conference Proceedings}
+\setcounter{counter}{1}
+%================================
+
+\Publications
+{ L.~Cooper {\it et al.},
+  {``$B_c \to B_{s(d)}$ form factors,''}
+  \textit{PoS Lattice 2019, 103}
+  [arXiv:1911:04282].
+  \inspireurl{http://inspirehep.net/record/1764049}
+}
+
+\Publications 
+{ R.~Li {\it et al.},
+  {``$D$ meson Semileptonic Decay Form Factors at $q^2 = 0$,''}
+  \textit{PoS Lattice 2018, 269}
+  [arXiv:1901.08989].
+  \inspireurl{http://inspirehep.net/record/1716788}
+}
+
+\Publications 
+{ A.~Bazavov {\it et al.},
+  {``$B$- and $D$-meson leptonic decay constants and quark masses from four-flavor lattice QCD''}
+  [arXiv:1810.00250].
+  \inspireurl{http://inspirehep.net/record/1696581}
+}
+
+\Publications
+{ C.M.~Bender, J.~Komijani, Q.~Wang,
+  {``Nonlinear eigenvalue problems,''}
+  In: \href{https://doi.org/10.1007/978-88-7642-613-1_2}{
+  \textit{Resurgence, Physics and Numbers, CRM Series, vol 20, pp. 67-89, 2017}}.
+}
+  
+\Publications 
+{ T.~Primer {\it et al.},
+  {``$D$ meson semileptonic form factors with HISQ valence and sea quarks,''}
+  \textit{PoS Lattice 2016, 305}.
+  \inspireurl{http://inspirehep.net/record/1589544}
+}
+
+\Publications 
+{ J.~Komijani {\it et al.},
+  {``Decay constants $f_B$ and $f_{B_s}$ and quark masses $m_b$ and $m_c$ from HISQ simulations,''}
+  \textit{PoS Lattice 2016, 294}
+  [arXiv:1611.07411].
+  \inspireurl{http://inspirehep.net/record/1499725}
+}
+
+\Publications 
+{ E.~Gamiz {\it et al.},
+  {``Kaon semileptonic decays with $N_f=$2+1+1 HISQ fermions and physical light-quark masses,''}
+  \textit{PoS Lattice 2016, 286}
+  [arXiv:1611.04118].
+  \inspireurl{http://inspirehep.net/record/1497756}
+}
+
+\Publications 
+{ T.~Primer {\it et al.},
+  {``$D$-Meson Semileptonic Form Factors at Zero Momentum Transfer in (2+1+1)-Flavor Lattice QCD,''} 
+  \textit{PoS Lattice 2015, 338}
+  [arXiv:1511.04000].
+  \inspireurl{http://inspirehep.net/record/1404168}
+}
+
+\Publications   
+{ A.~Bazavov {\it et al.}, 
+  {``Decay constants $f_B$ and $f_{B_s}$ from HISQ simulations,''}
+  \textit{PoS Lattice 2015, 331}
+  [arXiv:1511.02294].
+  \inspireurl{http://inspirehep.net/record/1403561}
+}
+
+\Publications   
+{ S.~Basak {\it et al.},
+  {``Electromagnetic effects on the light hadron spectrum,''}
+  \\{}\textit{J.~Phys. Conf.~Ser.~640, 012052 (2015)}
+  [arXiv:1510.04997].
+  \inspireurl{http://inspirehep.net/record/1395561}
+}
+
+\Publications
+{ A.~Bazavov {\it et al.}, 
+  {``Charmed and light pseudoscalar meson decay constants from HISQ simulations,''} 
+  \textit{PoS Lattice 2014, 382}
+  [arXiv:1411.2667].
+  \inspireurl{http://inspirehep.net/record/1327233}
+}
+
+\Publications
+{ A.~Bazavov {\it et al.}, 
+  {``Gradient Flow Analysis on MILC HISQ Ensembles,''} 
+  \textit{PoS Lattice 2014, 090}
+  [arXiv:1411.0068].
+  \inspireurl{http://inspirehep.net/record/1325810}
+}
+  
+\Publications
+{ S.~Basak {\it et al.},
+  {``Finite-volume effects and the electromagnetic contributions to kaon and pion masses,''} 
+  \textit{PoS Lattice 2014, 116}
+  [arXiv:1409.7139].
+  \inspireurl{http://inspirehep.net/record/1318949}
+}
+
+\Publications
+{ A.~Bazavov {\it et al.},
+  {``The $D_s$ , $D^+$, $B_s$, and $B^+$ decay constants from 2+1 flavor lattice QCD,''}  
+  \textit{PoS Lattice 2013, 394}
+  [arXiv:1403.6796].
+  \inspireurl{http://inspirehep.net/record/1285306}
+}
+
+\Publications
+{ A.~Bazavov {\it et al.},
+  {``Charmed and strange pseudoscalar meson decay constants from HISQ simulations,''} 
+  \textit{PoS Lattice 2013, 405}
+  [arXiv:1312.0149].
+  \inspireurl{http://inspirehep.net/record/1266967}
+}
+
+\Publications
+{ J.~Komijani and C.~Bernard, 
+  {``Staggered chiral perturbation theory for all-staggered heavy-light mesons,''}  
+  \textit{PoS Lattice 2012, 199}
+  [arXiv:1211.0785].
+  \inspireurl{http://inspirehep.net/record/1198163}
+}
+
+% The following two proceedings do not have proper reference info, so I drop them.
+\Publications
+ { J.~Komijani, A.~Mirkamali and J.~Nateghi, 
+   {``Combining multiple knife-edge diffraction and ground reflections for terrain path loss diffraction,''} 
+   \textit{Proceedings of the Fourth European Conference on Antennas and Propagation, 2010}.
+   \\{}\href{https://ieeexplore.ieee.org/abstract/document/5505627}{IEEE}}
+ 
+\Publications
+{ J.~Komijani, J.~Rashed-Mohassel and H.~Hadidian-Moghadam, 
+   {``Green function for a horizontal source over a dielectric slab with a PEMC ground,''}  
+   \textit{Proceedings of the Third European Conference on Antennas and Propagation, 2009}.
+   \\{}\href{https://ieeexplore.ieee.org/abstract/document/5067598}{IEEE}}
+
+\end{document}

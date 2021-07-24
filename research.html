@@ -1,0 +1,616 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Javad Komijani</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--the next line is for latex support; see notes_html-->
+    <script type="text/javascript" id="MathJax-script" async 
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header>
+        <img src="images/Photo2021.jpg" width="80%" height="80%"> 
+        <br>
+        <a href="index.html"><button class="button">Home</button></a>
+        <br>
+        <a href="publications.html"><button class="button">Publications</button></a>
+        <br>
+        <a href="research.html"><button class="button">Research</button></a>
+        <br>
+        <a href="teaching.html"><button class="button">_Teaching</button></a>
+      </header>
+
+
+      <section>
+        <p>My research is
+        in the interdisciplinary area of computational physics,
+        effective field theories (EFT), lattice gauge theory, and mathematical physics.
+        </p>
+
+        <p>
+        During my Ph.D. studies in physics at Washington University in St. Louis,
+        I had the unusual opportunity to work simultaneously
+        on two completely independent subjects.
+        Having two thesis advisors,
+        Prof.
+        <a href="https://academictree.org/physics/peopleinfo.php?pid=665247">
+            Claude Bernard</a>
+        and Prof.
+        <a = href="https://academictree.org/physics/peopleinfo.php?pid=476157">
+            Carl Bender</a>,
+        I was able to work on diverse topics from lattice gauge theory
+        to mathematical physics.
+        During my postdoctoral research, I continued working on those topics.
+        Moreover, I introduced a project to determine 
+        <a href=#quark_masses>quark masses</a> with a novel method,
+        and I employed different skills that I learned from my advisors
+        in the project,
+        which resulted to three related papers (a trilogy)
+        and led to very precise determination of the masses of five of
+        the six quarks found in Nature.</p>
+
+
+        <p>On this page, you see a list of my scientific projects during my doctoral
+        and postdoctoral research. I only mention the papers that I was one of
+        the main coauthors with a significant amount of contribution, and I
+        mainly describe my contribution to the papers.
+        </p>
+
+        <p><ul>
+            <li><a href=#quark_masses>Quark Masses</a></li>
+            <li><a href=#decay_constants>Decay Constants and Search for New Physics</a></li>
+            <li><a href=#nonlinear_eigenvalue>Nonlinear Eigenvalue Problems</a></li>
+            <li><a href=#quark_condensate> Strange Quark Condensate</a></li>
+            <li><a href=#form_factors>Form Factors and Search for New Phyics</a></li>
+            <li><a href=#decay_rate_eta_cb>Decay Rate of eta mesons</a></li>
+        </ul></p>
+
+
+        <!--================================================================-->
+        <!--                          Quark Masses                          -->
+        <!--================================================================-->
+        <br>
+        <hr>
+        <h2><div id="quark_masses">
+                Quark Masses
+            </div>
+        </h2>
+
+        <p>
+        <div class="row">
+            <div class="column2">
+                <img src="images/mud_2GeV_summary.jpg"
+                     width="400px" height="200px">
+            </div>
+            <div class="column2">
+                <img src="images/mud_2GeV_summary.jpg"
+                     width="400px" height="200px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column2">
+                <img src="images/mc_mc_summary.jpg"
+                     width="400px" height="200px">
+            </div>
+            <div class="column2">
+                <img src="images/mb_mb_summary.jpg"
+                     width="400px" height="200px">
+            </div>
+        </div>
+        </p>
+
+
+        <p>A trilogy of papers describe my work on the determination of quark masses:
+        <ol>
+         <li><a href="http://inspirehep.net/record/1507484">
+             <em>A discussion on leading renormalon in the pole mass</em>,</a>
+         </li>
+
+         <li><a href="http://inspirehep.net/record/1643281">
+             <em>Relations between Heavy-light Meson and Quark Masses</em>,</a>
+         </li>
+
+         <li><a href="http://inspirehep.net/record/1654552">
+             <em>Up-, down-, strange-, charm-, and bottom-quark masses from
+                 four-flavor lattice QCD</em>.</a>
+         </li>
+        </ol>
+        
+        <p>I describe this project as the one that I am most proud of.
+        In ten seconds you understand why!
+        This project was indeed a complex work in the interdisciplinary area of
+        computational physics, effective field theories, lattice gauge theory,
+        mathematical physics, and statistical analysis.
+        I am proud because of two reasons.
+        First, I proposed the idea from scratch; it was my own child.
+        Second, although the idea looked very straightforward,
+        its successful implementation required a diverse set of skills that,
+        fortunately, I either had or learned.
+        The work led to a very precise determination of the masses of five of
+        the six quarks found in Nature and their ratios.</p>
+
+        <p>Let me start with a comment that is not obvious for
+        non-theoretical physicists. The conventional
+        notion of the rest mass of an object, such as the Sun, the Earth,
+        your smartphone, a piece of paper, or even an electron,
+        cannot be straightforwardly used for particles like quarks that are
+        confined in hadrons such as a proton.
+        Because it requires a good deal of theoretical work, it is the job of
+        theoretical physicists---not experimentalists---to <em>measure</em>
+        (calculate) the masses of quarks.
+        Theoretical physicists have developed their conventions, also called
+        schemes, of defining and measuring the masses.
+        The most common one is the so-called MS-bar scheme;
+        people usually report their results in this particular scheme.
+        Let me now present a chronological report of my idea of calculating
+        quark masses.
+        </p>
+
+        <p>I started thinking about the idea when I was in St. Louis in the last
+        year of my Ph.D. studies and proposed the idea in the Fall of 2015 when
+        I went to Munich, as a postdoctoral researcher.
+        The idea looked nice and simple, and my colleagues liked me working on
+        it and determine the masses of quarks.
+        As the devil always comes from details, I encountered many problems
+        when I tried to implement the idea.</p>
+
+        <p>The idea was novel and simple looking: generate data with lattice-QCD
+        simulations, build a function based on effective field theories 
+        to model the data, fit the function to the data,
+        and finally, use the parameters of the fit function as well as a set of
+        experimental inputs to determine the masses of quarks.
+        From the numerical point of view, the most expensive part was
+        the first part that required generating a large amount of lattice-QCD
+        data. Fortunately, I did not even need to worry about this part because
+        the MILC collaboration was generating the required data for a different
+        project: determination of
+        <a href=#decay_constants>decay constants</a> of heavy-light mesons.
+        </p>
+
+        <p>This project included several layers of analyses,
+        starting from the analysis of lattice-QCD correlators,
+        which was done by Doug. This was followed by a layer of
+        analysis that included scale setting and determination of the ratio of
+        light quark masses, namely the ratio of the average of the up and down
+        quark masses to the strange quark mass. In a parallel process mainly
+        led by Claude, the ratio of the up and down quark masses was
+        determined using a lattice setup that included both QCD and QED
+        effects.
+        Those layers of analyses were common with the
+        <a href=#decay_constants>decay constant</a> project.
+        I was in charge of the next layers up to calculating the final
+        results presented in the paper. Andreas, Antonio, Claude, Doug, Nora,
+        and Ruth were in the subgroup that directed the research.
+        <!--(For example, the comparison plots shown above are made by Ruth.)-->
+        The rest of the coauthors of the last paper of the trilogy were involved
+        in the project mainly at the stage of generating lattice-QCD data.
+        The work was also influenced by Prof. Marteen Beneke because of his
+        valuable comments on the first paper of the trilogy.
+        </p>
+
+        <p>From the numerical point of view, the lattice-QCD data that I worked
+        with in 2015 were not as <em>clean</em> as the final data that I used
+        in 2018 when the last paper of the trilogy was published.
+        During those years my colleagues, especially Doug, generated more
+        lattice data, which improved the statistics.
+        As the statistics improved, his analyses evolved and led to
+        <em>cleaner</em> data.
+        Moreover, Doug and Claude investigated the effect of freezing of
+        topological charge on the lattice data, and they incorporated their
+        results in the analysis.
+        </p>
+
+        <p>Along with improving the lattice-QCD statistics,
+        the model that I used for fitting the data evolved during the project
+        from a very simple model to a <em>sophisticated</em> one.
+        The model initially was designed to yield only the charm and bottom
+        quark masses without including the light quark masses
+        and their effects in simulations.
+        As an intermediate quark mass, we first employed the <em>kinetic</em>
+        mass and, later on, the <em>renormalon-subtracted</em> mass.
+        Both of these intermediate masses were employed to circumvent
+        the so-called renormalon divergence in the <em>pole</em> mass of
+        quarks.
+        None of them led to satisfying results, so I decided to improve the
+        model by investigating the renormalon divergence in the pole mass.</p>
+
+        <p>My efforts to improve the model led to the first and second papers of
+        the trilogy.
+        In the first one, I investigated the pattern of the renormalon divergence
+        in the pole mass and found a recursive relation that governs the
+        large-order behavior of the pole mass in perturbation theory, leading
+        to the renormalon divergence. Based on the recursive relations, 
+        I obtained a sum rule to calculate the overall strength
+        of the renormalon divergence and incorporated the result in the model.
+        In the second paper of the trilogy,
+        I investigated two aspects of relating the mass
+        of a heavy-light meson to the masses of its quark-antiquark components.
+        First, I introduced a novel definition for a quark
+        mass, the minimal-renormalon-subtracted (MRS) mass, which was free
+        from the shortcomings of the other intermediate masses used
+        initially in the work.
+        Using a skeleton of effective field theories, which was originally
+        developed by Claude and I for
+        the <a href=#decay_constants>decay constant</a> project,
+        and employing the MRS mass, I presented a sophisticated, practical
+        formula to relate meson masses to quark masses.
+        After I finished the draft,
+        Andreas' eloquence improved the draft to a very well-written one.
+        Antonio's and Nora's critical reading of the draft and valuable comments
+        polished the draft such that it left the referee nothing to object to.
+        The paper also benefitted from Claude's suggestions in its early
+        stages.
+        </p>
+
+        <p>
+        Let me now highlight a part of the second paper related to the MRS mass
+        <blockquote> As explained in Ref.
+            [<a href="https://doi.org/10.1007/978-1-4757-0435-8_1">73</a>],
+            "an asymptotic series ... is a compact encoding of a function,
+            and its divergence should be regarded not as a deficiency but
+            as a source of information about the [underlying] function."
+            The crucial point here is that, equipped with the overall
+            normalization [<a href="http://inspirehep.net/record/1507484">8</a>],
+            we could decode the divergence due to the
+            leading infrared renormalon in the pole mass. Then we could
+            recover the contribution of this renormalon in the form of the
+            nonperturbative function \(J_\text{MRS}(\bar m)\),
+            which has a convergent expansion in powers of the reciprocal of
+            \(\alpha_s(\bar m)\), rather than in powers of \(\alpha_s(\bar m)\)
+            itself.
+        </blockquote>
+        <br>
+        The title of Ref [73] in the above passage is
+        "<em>Asymptotics, Superasymptotics, Hyperasymptotics...</em>",
+        and my familiarity with these subjects (due to my work with Prof. Carl
+        Bender) allowed me to provide a simple, transparent way of handling
+        the renormalon divergence in the pole mass without a need to introduce
+        a cutoff scale.
+        </p>
+
+
+        <p>I conclude this part by mentioning that our determination of quark
+        masses attracted widespread attention, including an invitation
+        to address the plenary session of the 36th International Symposium on
+        Lattice Field Theory (2018) and the plenary session of XIIIth
+        Conference on Quark Confinement and the Hadron Spectrum (2018).
+        Furthermore, I contributed to a review paper:
+        <ol start=4>
+            <li><a href="http://inspirehep.net/record/1788480">
+                <em>Strong coupling constant and quark masses from lattice
+                QCD</em>,</a>
+            </li>
+        </ol>
+        and created a python module, called
+        <a href="https://github.com/jkomijani/meson_mass"> <em>meson_mass</em></a>,
+        that contains effective formulas to describe the mass of heavy-light
+        pseudoscalar mesons.
+       </p>
+
+
+        <!--================================================================-->
+        <!--          Decay Constants and Search for New Physics            -->
+        <!--================================================================-->
+        <br>
+        <hr>
+        <h2><div id="decay_constants">
+                Decay Constants and Search for New Physics
+            </div>
+        </h2>
+
+        <p>
+        <div class="row">
+            <div class="column2">
+                <img src="images/PhiHu-PhiHs_vs_MHs.jpg"
+                     width="320px" height="240px">
+            </div>
+            <div class="column2">
+                <img src="images/HQ_masses.jpg"
+                     width="320px" height="226px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column2">
+                <img src="images/fD_summary.jpg"
+                     width="400px" height="200px">
+            </div>
+            <div class="column2">
+                <img src="images/fB_summary.jpg"
+                     width="400px" height="200px">
+            </div>
+        </div>
+        </p>
+
+        <p>I have been one of the key contributors of a project by
+        the FNAL and MILC collaboration on the determination of decay constants
+        of heavy-light mesons using lattice-QCD simulations.
+        In short, these decay constants are useful in the search for New Physics
+        beyond the
+        <a href="https://en.wikipedia.org/wiki/Standard_Model">Standard Model</a>,
+        and that's why it was an important project.
+
+        <p>A trilogy of papers describe my work related to this project:
+        <ol>
+         <li><a href="http://inspirehep.net/record/1254568">
+             <em>Chiral Perturbation Theory for All-Staggered Heavy-Light
+                 Mesons,</em></a>
+         </li>
+
+         <li><a href="http://inspirehep.net/record/1306303">
+            <em>Charmed and light pseudoscalar meson decay constants from
+                four-flavor lattice QCD with physical light quarks,</em></a>
+         </li>
+
+         <li><a href="http://inspirehep.net/record/1644910">
+                 <em>B- and D-meson leptonic decay constants from four-flavor
+                     lattice QCD</em>.</a>
+         </li>
+        </ol>
+        The first paper of the trilogy is my first paper with Claude,
+        and it outlines the skeleton of effective field theories (EFT) used in
+        this project and also the <a href=#quark_masses>quark masses</a> project.
+        The technique of constructing EFTs is very powerful in tackling problems
+        with several scales such as problems involving very heavy and/or very
+        light quarks.
+        The effective theory that we developed in that paper was a combination
+        of three EFTs: Symanzik effective theory for small lattice spacing,
+        chiral perturbation theory for small light-quark masses, and heavy
+        quark effective theory for large heavy-quark masses.
+        I learned these effective field theories when I started working with
+        Claude at the end of the first year of my Ph.D. studies.
+        He patiently taught these theories to me and guided me to apply these
+        theories in the statistical analysis of lattice-QCD data.
+        </p>
+
+
+        <p>Applications of the results of the first paper
+        led to the second paper of the trilogy published in
+        2014, using a part of the data, and to the third one published in 2018,
+        using the complete set of the data. (The lattice data used in this project
+        were generated by the MILC collaboration during more than six years:
+        before 2012 till the end of 2017.)
+        In the third paper, we presented the most precise determination 
+        of the \( D \) and \( B \) meson decay constants and their ratios.
+        Our results for the \( B \) meson decay constants were three times more precise
+        than the previous best lattice-QCD calculations, and brought the QCD
+        errors in the standard model predictions for the rare leptonic decays 
+        \(B_s \to \mu^+ \mu^-,\)
+        \(B^0 \to \mu^+ \mu^-,\)
+        and their ratios to well below other sources of uncertainty.
+        </p>
+
+        <p>I should emphasize that the work published in the second and third
+        papers included several layers of heavy computations and analyses.
+        The first layer, done by the MILC collaboration,
+        was generating lattice-QCD ensembles and measuring the
+        so-called two-point correlators on the lattices.
+        The second layer was to statistically analyze the correlators,
+        followed by a layer of analysis that included scale setting and
+        determination of the ratio of light quark masses,
+        namely the ratio of the average of the up and down
+        quark masses to the strange quark mass.
+        Doug performed those layers of analyses.
+        In a parallel process mainly led by Claude,
+        the ratio of the up and down quark masses was
+        determined using a lattice setup that included both QCD and QED
+        effects. Andreas, Claude, Doug, Ruth, and I were on the committee of
+        the project,
+        and I was the main force in performing the next layers
+        up to calculating the decay constants in the continuum limit.
+        (Claude was my Ph.D. supervisor when we wrote the second paper of the
+        trilogy, and Andreas was my postdoctoral mentor when we wrote the
+        third one.)
+        By the way, the phenomenological aspects of the project were worked out
+        by Ruth.
+
+        <p>
+        A part of the analyses was common between this project and
+        my other project on the determination of
+        <a href=#quark_masses>quark masses</a>, described above.
+        </p>
+
+
+        <!--================================================================-->
+        <!--                Nonlinear Eigenvalue Problems                   -->
+        <!--================================================================-->
+        <br>
+        <hr>
+        <h2><div id="nonlinear_eigenvalue">
+                Nonlinear Eigenvalue Problems
+            </div>
+        </h2>
+
+        <p>
+        <div class="row">
+            <div class="column2">
+                <img src="images/Airy_first_few.jpg"
+                     width="320px" height="400px">
+            </div>
+            <div class="column2">
+                <img src="images/Airy_50000.jpg"
+                     width="320px" height="400px">
+            </div>
+        </div>
+        </p>
+
+        <p>My Ph.D. thesis contained two completely independent parts.
+        The idea of nonlinear eigenvalue problems was the subject of the
+        second part, which was my research under the supervision of
+        Prof. Carl Bender.
+        We published two papers
+        <ol>
+         <li><a href="https://doi.org/10.1088/1751-8113/47/23/235204">
+                 <em>Nonlinear Eigenvalue Problems</em>,</a>
+         </li>
+        
+         <li><a href="https://doi.org/10.1088/1751-8113/48/47/475202">
+                 <em>Painleve Transcendents and PT-Symmetric Hamiltonians</em>,</a>
+         </li>
+        </ol>
+
+        during my Ph.D. studies.
+        In these papers, we introduced the idea of a nonlinear eigenvalue
+        problem by investigating three nonlinear differential equations.
+
+        <p>We found that, for each equation, there are one or more discrete
+        sets of initial conditions that lead to unstable separatrix behavior.
+        We identified these discrete sets as eigenvalues of the corresponding
+        problems and worked out their asymptotic behaviors by reducing
+        each problem to a linear one.</p>
+
+        <p>Let me give a chronological report about this project.
+        The whole project started from one of Carl's lectures on advanced
+        mathematical methods in the Fall semester of 2012;
+        the <em>''Physics 503''</em> course.
+        One day he talked about the first Paineleve equation
+        and explained a phenomenon that is shown in Fig. 4.9 of his book.
+        I tried to understand the phenomenon using a simpler equation:
+        the Ricatti equation. Right after his lecture, I asked him if
+        the Ricatti equation shows the same phenomenon, and he told me
+        something along the lines of:
+        <em>why don't you solve the equation numerically to find out what happens?</em>
+        </p>
+
+        <p>I tackled both the Ricatti and the first Painleve equations
+        and showed the results to Carl.
+        He immediately realized that the initial values (or slopes)
+        follow an algebraic asymptotic form.
+        By the way, the solutions resembled quantum wave functions, and thus
+        we called the initial values/slopes as the <em>eigenvalues</em>
+        of the problem.
+        Later on, I extended the study to the second Painleve equation
+        and found similar behavior.
+        Carl suggested me to investigate a simpler equation:
+        \( y'(x) = \cos(\pi xy) \),
+        which is a first-order nonlinear differential equation, unlike the
+        Painleve equations that are second order.
+        (This equation was given as an exercise in the text by Bender and Orszag.)
+
+        <p>Our numerical investigation indicated that the eigenvalues of
+        \( y'(x) = \cos (xy) \)
+        asymptotically grow as 
+        \( A \sqrt{n} \),
+        and we used Richardson extrapolation to calculate the coefficient
+        \( A \)
+        to an accuracy of one part in
+        \( 10^{10} \)
+        and we conjectured reliably that 
+        \( A = 2^{5/6} \).
+        At this point, Carl told me to solve the problem analytically
+        because, as he told, the coefficient \( A \)
+        cannot be an algebraic number, unless there is an analytic solution
+        to the problem.
+        I could find an analytic solution by reducing the problem to
+        a one-dimensional random-walk problem.</p>
+
+        In addition to Carl and me,
+        <!--a href=https://www.city.ac.uk/about/people/academics/andreas-fring>
+            Andreas Fring</a-->
+        Prof. Andreas Fring
+        contributed to the first paper (mainly to the numerical aspects).
+        We published the first paper, and we returned to the asymptotic
+        behavior of the eigenvalues of the first and second Painleve equations,
+        both numerically and analytically. We realized there is a deep
+        connection between the nonlinear eigenvalues of these two equations
+        and corresponding PT-symmetric Hamiltonians,
+        and we published the results in the second paper.
+        (Interestingly, I was supposed to work with Carl on
+        PT-symmetric QFT in 2011, but Carl went on sabbatical leave,
+        and when he returned in the Fall of 2012, I could not work with him
+        because I was deeply occupied by my project with Claude.
+        Incidentally, my question eventually returned me to the PT-symmetric
+        world!)</p>
+
+
+        <p>
+        Carl and I continued our work. Here are three more papers that we have
+        published after my Ph.D. studies:
+        <ol start=3>
+            <li><a href="https://doi.org/10.1088/1751-8121/ab2bcc">
+                <em>Nonlinear eigenvalue problems for generalized Painleve
+                equations</em>,</a>
+            </li>
+
+            <li><a href="https://inspirehep.net/literature/1881630">
+                <em>Fourth Painleve Equation and PT-Symmetric
+                Hamiltonians</em>,</a>
+            </li>
+
+            <li><a href="https://inspirehep.net/literature/1877706">
+                <em>First-order nonlinear eigenvalue problems and random walk in
+                one dimension</em>,</a>
+            </li>
+        </ol>
+        where the first one is written in collaboration with
+        <a href=https://academictree.org/physics/peopleinfo.php?pid=482992>
+            Qinghai Wang</a>
+        with minimal contribution from me.
+        The next one is an addendum to our earlier paper on Painleve equations,
+        and the last one discusses nonlinear eigenvalue problems associated
+        with many special functions such as the Bessel, Airy, reciprocal gamma,
+        and Riemann zeta functions.</p>
+
+
+        <!--================================================================-->
+        <!--                       Quark Condensate                         -->
+        <!--================================================================-->
+        <br>
+        <hr>
+        <h2><div id="quark_condensate">
+                 Quark Condensate
+            </div>
+        </h2>
+
+        <p>....</p>
+
+        <!--================================================================-->
+        <!--           Form Factors and Search for New Physics              -->
+        <!--================================================================-->
+        <br>
+        <hr>
+        <h2><div id="form_factors">
+                 Form Factors and Search for New Physics
+            </div>
+        </h2>
+
+        <p>....</p>
+
+        <!--================================================================-->
+        <!--                     Decay rate of eta_c/b                      -->
+        <!--================================================================-->
+        <br>
+        <hr>
+        <h2><div id="decay_rate_eta_cb">
+                 Decay Rate of eta_c and eta_b
+            </div>
+        </h2>
+
+        <p>....</p>
+
+      
+        <!--================================================================-->
+        <!--                     Adapted from ...                           -->
+        <!--================================================================-->
+        <br>
+        <hr>
+        <section>
+          <p><small>Adapted from the
+             <a href="https://github.com/orderedlist/minimal">minimal theme</a>
+             by <a href="https://github.com/orderedlist">orderedlist</a>.
+          </small></p>
+        </section>
+
+      </section>
+      
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>

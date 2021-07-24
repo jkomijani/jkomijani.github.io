@@ -1,0 +1,279 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{textcomp} % text version of symbols in TS1, e.g. \textrightarrow{}
+\usepackage{amstext} % proper support of frequently used \text{} command
+
+\usepackage[left=0.7in,top=1.2in,right=0.9in,bottom=1in]{geometry} % Document margins
+\usepackage{color}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref} % Required for adding links	and customizing them
+
+\newcommand{\inspireurl}[1]{\\\href{#1}{INSPIRE-HEP entry}}
+
+\pagestyle{empty} % Removes page numbering
+\setlength{\parindent}{0in} % to remove the tab at the beginning of each paragraph
+
+\newcommand{\itab}{\hspace*{-2em}}
+\newcommand{ \tab}{\hspace*{ 2em}}
+\newcommand{\ihalftab}{\hspace*{-1em}}
+\newcommand{ \halftab}{\hspace*{ 1em}}
+
+\newcounter{counter}
+\setcounter{counter}{1} % set the counter to 1
+%\newcounter{subcounter}[counter] %If you want the subcounter to be reset to zero every time counter is increased
+%\addtocounter{counter}{1}
+%\arabic{counter}
+\newcommand{\mycount}[0]{\arabic{counter}\addtocounter{counter}{1}}
+
+\newcommand{\miniLeft}[1]{\begin{minipage}[t]{0.15\textwidth} {#1} \end{minipage}}
+\newcommand{\miniRight}[1]{\begin{minipage}[t]{0.85\textwidth} {#1} \end{minipage} \\}
+\newcommand{\mini}[2]{\miniLeft{#1} \miniRight{#2}}
+\newcommand{\Publications}[1]{\miniLeft{\begin{center} [\mycount] \end{center}}  \miniRight{#1} \\}
+
+\newcommand{\Section}[1]{\linethickness{0.8mm} \textcolor{blue}{\\ {\textbf{#1}} \vspace{-3mm} \\  \line(1,0){250}} 
+\\ } 
+
+
+\begin{document}
+
+%--------------------------------------
+%	NAME AND CONTACT INFORMATION
+%--------------------------------------
+
+\vspace{-.1cm}
+\par{\centering\textcolor{blue}{ \underline{CURRICULUM VITAE}\\}} % CURRICULUM VITAE
+
+%\textcolor{cyan}{\large CURRICULUM VITAE\\} % CURRICULUM VITAE
+
+\vspace{0.7cm} % vertical distance
+
+%======================================
+%\Section{Contact Information}
+
+{\large \textbf{Javad Komijani}} \\
+
+\vspace{-5mm}
+\begin{minipage}[t]{0.40\textwidth} 
+{\ }\\
+%{jkomijani\_\_\_at\_\_\_physics.wustl.edu}
+{jkomijani\_\_\_at\_\_\_ut.ac.ir}
+\end{minipage}
+\begin{minipage}[t]{0.60\textwidth} 
+\begin{flushright}
+{ }
+%{School of Physics and Astronomy}\\
+%{University of Glasgow, UK}
+\end{flushright}
+\end{minipage} \\
+
+\vspace{0.5cm} % vertical distance
+
+%======================================
+\Section{Education and Research Experience}
+
+% fourth postdoc 
+% \mini{2021}{{Postdoctoral Researcher}, \textbf{ETH Z\"urich}}
+
+% third postdoc 
+\mini{2019-2020}{{Postdoctoral Researcher}, \textbf{University of Tehran}}
+
+% second postdoc 
+\mini{2017-2018}{{Postdoctoral Researcher}, \textbf{University of Glasgow}}
+
+% first postdoc 
+\mini{2015-2017}{{Postdoctoral Researcher}, \textbf{Technical University of Munich}}
+
+% Ph.D.
+\mini{2010-2015}{{Ph.D. in Physics}, \textbf{Washington University in St. Louis}}
+\mini{Thesis Title}{Topics in Lattice Gauge Theory and Theoretical Physics}
+\mini{Advisors}{Prof. Claude Bernard and Prof. Carl M. Bender}
+
+% M.Sc.
+\mini{2006-2009}{{M.Sc. in Electrical Engineering}, \textbf{University of Tehran}}
+%\mini{Thesis Title}{Green's Functions for Structures Involving a PEMC Ground}
+%\mini{Advisor}{Prof. Jalil Rashed-Mohassel}
+
+% B.Sc.
+\mini{2002-2006}{{B.Sc. in Electrical Engineering}, \textbf{University of Tehran}}
+
+
+%======================================
+\Section{Teaching Experience}
+
+\mini{Fall 2019}{\emph{Workshop on Lattice QCD (with Monte Carlo Simulations)}, Instructor, University of Tehran}\\
+\mini{Winter 2018}{\emph{C Programing under Linux}, Teaching Assistant, University of Glasgow}\\
+\mini{Spring 2016}{\emph{Elementary Particle Physics}, Teaching Assistant, Technical University of Munich }\\
+\mini{Spring 2016}{\emph{Quantum Mechanics}, Teaching Assistant, Technical University of Munich }\\
+\mini{Fall 2015}{\emph{Quantum Field Theory}, Teaching Assistant, Technical University of Munich }\\
+\mini{Spring 2015}{\emph{Statistical Mechanics}, Teaching Assistant, Washington University in St. Louis}\\
+\mini{Fall 2013}{\emph{Quantum Mechanics}, Teaching Assistant, Washington University in St. Louis}\\
+\mini{Fall 2012}{\emph{Physics I}, Teaching Assistant, Washington University in St. Louis}\\
+\mini{Spring 2011}{\emph{Physics II}, Teaching Assistant, Washington University in St. Louis}\\
+\mini{Spring 2011}{\emph{Special Relativity}, Teaching Assistant, Washington University in St. Louis}\\
+\mini{Spring 2006}{\emph{Engineering Mathematics}, Teaching Assistant, University of Tehran}\\
+\mini{Spring 2006}{\emph{Electronics Lab I}, Teaching Assistant, University of Tehran}\\
+\mini{Fall 2005}{\emph{Engineering Mathematics}, Teaching Assistant, University of Tehran}\\ 
+\mini{Summer 2005}{\emph{Electronics Lab II}, Teaching Assistant, University of Tehran}
+
+
+%======================================
+% \clearpage
+\Section{Computer Skills}
+
+\mini{~}{Python, Cython, C/C++, Bash}\\
+\mini{~}{MATLAB, Mathematica}
+
+%======================================
+\Section{Public Scripts}
+\mini{\href{https://github.com/jkomijani/gauge_tools}{gauge\_tools}}
+{A Cython/Python package for Monte Carlo simulations of gauge theories.}
+
+\mini{\href{https://github.com/jkomijani/meson_mass}{meson\_mass}}
+{A Python package for mesons masses from lattice-QCD simulations.}
+
+%======================================
+\Section{Selected Publications}
+
+\Publications
+{ J.~Komijani, P.~Petreczky and J.~H.~Weber,
+  {``Strong coupling constant and quark masses from lattice QCD,''}
+  \textit{Prog. Part. Nucl. Phys.~113, 103788 (2020)}
+  [arXiv:2003.11703]
+  \inspireurl{http://inspirehep.net/record/1788480}
+}
+
+% \Publications
+% { L.~J.~Cooper \textit{et al.},
+%   {``$B_c \to B_{s(d)}$ form factors from lattice QCD,''}
+%   \textit{Phys.~Rev. D~102, 014513 (2020)}
+%   [arXiv:2003.00914]
+%   \inspireurl{http://inspirehep.net/record/1783324}
+% }
+
+\Publications
+{ C.M.~Bender, J. Komijani, Q. Wang,
+  {``Nonlinear eigenvalue problems for generalized Painlev\'e equations,''}
+  \href{https://doi.org/10.1088/1751-8121/ab2bcc}{
+  \textit{J.~Phys.~A: Math. and Theor.~52, 315202 (2019)}} [arXiv:1903.10640]
+}
+
+\Publications 
+{ C.T.H.~Davies {\it et al.},
+  {``Determination of the quark condensate from heavy-light current-current correlators in full lattice QCD,''}
+  \textit{Phys.~Rev. D~100, 034506 (2019)}
+  [arXiv:1811.04305]
+  \inspireurl{http://inspirehep.net/record/1703119}
+} 
+
+
+\Publications 
+{ A.~Bazavov {\it et al.},
+  {``Up-, down-, strange-, charm-, and bottom-quark masses from four-flavor lattice QCD,''}
+  \textit{Phys.~Rev. D~98, 054517 (2018)}
+  [arXiv:1802.04248]
+  \inspireurl{http://inspirehep.net/record/1654552}
+}
+
+\Publications 
+{ A.~Bazavov {\it et al.},
+  {``$B$- and $D$-meson leptonic decay constants from four-flavor lattice QCD,''}
+  \textit{Phys.~Rev. D~98, 074512 (2018)}
+  [arXiv:1712.09262]
+  \inspireurl{http://inspirehep.net/record/1644910}
+}
+
+\Publications
+{ N.~Brambilla , J.~Komijani, A.S.~Kronfeld, A.~Vairo,
+  {``Relations between Heavy-light Meson and Quark Masses,''}
+  \textit{Phys.~Rev. D~97, 034503 (2018)}
+  [arXiv:1712.04983]
+  \inspireurl{http://inspirehep.net/record/1643281}
+}
+ 
+\Publications 
+{ J.~Komijani,
+  {``A discussion on leading renormalon in the pole mass,''}
+  \textit{JHEP 1708, 062 (2017)}
+  [arXiv:1701.00347]
+  \inspireurl{http://inspirehep.net/record/1507484}
+}
+
+\Publications
+{ C.M.~Bender and J.~Komijani, 
+  {``Painlev\'e Transcendents and ${\mathcal{P}}{\mathcal{T}}$-Symmetric Hamiltonians,''}
+  \href{https://doi.org/10.1088/1751-8113/48/47/475202}{
+  \textit{J.~Phys.~A: Math. and Theor. 48, 475202 (2015)}}
+  [arXiv:1502.04089]
+  %\inspireurl{http://inspirehep.net/record/1344799}
+}
+ 
+\Publications
+{ A.~Bazavov {\it et al.},
+  {``Charmed and light pseudoscalar meson decay constants from four-flavor lattice QCD with physical light quarks,''}
+  \textit{Phys.~Rev. D~90, 074509 (2014)}
+  [arXiv:1407.3772]
+  \inspireurl{http://inspirehep.net/record/1306303}
+}
+
+\Publications
+{ C.M.~Bender, A.~Fring and J.~Komijani,
+  {``Nonlinear Eigenvalue Problems,''}
+  \href{https://doi.org/10.1088/1751-8113/47/23/235204}{
+  \textit{J.~Phys.~A: Math. and Theor.~47, 235204 (2014)}}
+  [arXiv:1401.6161]
+}
+
+\Publications
+{ C.~Bernard and J.~Komijani, 
+  {``Chiral Perturbation Theory for All-Staggered Heavy-Light Mesons,''}
+  \textit{Phys.~Rev. D~88, 094017 (2013)}
+  [arXiv:1309.4533]
+  \inspireurl{http://inspirehep.net/record/1254568}
+}
+
+%======================================
+% \pagebreak
+\Section{References}
+
+\begin{minipage}[t]{0.25\textwidth}
+\textbf{Claude Bernard}
+\end{minipage} \begin{minipage}[t]{0.75\textwidth} 
+Washington University in St. Louis, \textcolor{blue}{cb\_\_\_at\_\_\_lump.wustl.edu}
+\end{minipage} \\
+
+\begin{minipage}[t]{0.25\textwidth}
+\textbf{Carl M. Bender}
+\end{minipage} \begin{minipage}[t]{0.75\textwidth} 
+Washington University in St. Louis, \textcolor{blue}{cmb\_\_\_at\_\_\_wustl.edu}
+\end{minipage} \\
+
+\begin{minipage}[t]{0.25\textwidth}
+\textbf{Andreas S. Kronfeld}
+\end{minipage} \begin{minipage}[t]{0.75\textwidth} 
+Fermi National Accelerator Laboratory, \textcolor{blue}{ask\_\_\_at\_\_\_fnal.gov}
+\end{minipage} \\ 
+
+\begin{minipage}[t]{0.25\textwidth}
+\textbf{Doug Toussaint}
+\end{minipage} \begin{minipage}[t]{0.75\textwidth} 
+University of Arizona, \textcolor{blue}{doug\_\_\_at\_\_\_physics.arizona.edu}
+\end{minipage} \\ 
+
+\begin{minipage}[t]{0.25\textwidth}
+\textbf{Nora Brambilla}
+\end{minipage} \begin{minipage}[t]{0.75\textwidth} 
+Technical University of Munich, \textcolor{blue}{nora.brambilla\_\_\_at\_\_\_ph.tum.de}
+\end{minipage} \\ 
+
+\begin{minipage}[t]{0.25\textwidth}
+\textbf{Christine Davies}
+\end{minipage} \begin{minipage}[t]{0.75\textwidth} 
+University of Glasgow, \textcolor{blue}{Christine.Davies\_\_\_at\_\_\_glasgow.ac.uk}
+\end{minipage} \\ 
+ 
+\begin{minipage}[t]{0.25\textwidth}
+\textbf{Sedigheh Deldar}
+\end{minipage} \begin{minipage}[t]{0.75\textwidth} 
+University of Tehran, \textcolor{blue}{sdeldar\_\_\_at\_\_\_ut.ac.ir}
+\end{minipage} \\
+
+\end{document}
