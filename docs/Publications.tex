@@ -24,18 +24,20 @@
 %\arabic{counter}
 \newcommand{\mycount}[0]{\arabic{counter}\addtocounter{counter}{1}}
 
-\newcommand{\miniLeft}[1]{\begin{minipage}[t]{0.15\textwidth} {#1} \end{minipage}}
-\newcommand{\miniRight}[1]{\begin{minipage}[t]{0.85\textwidth} {#1} \end{minipage} \\}
-\newcommand{\mini}[2]{\miniLeft{#1} \miniRight{#2}}
-\newcommand{\Publications}[1]{\miniLeft{\begin{center} [\mycount] \end{center}}  \miniRight{#1} \\}
+\newcommand{\miniLeft}[1]{\begin{minipage}[t]{0.05\textwidth} {#1} \end{minipage}}
+\newcommand{\miniRight}[1]{\begin{minipage}[t]{0.92\textwidth} {#1} \end{minipage} \\}
 
-\newcommand{\Section}[1]{\linethickness{0.8mm} \textcolor{blue}{\\ {\textbf{#1}} \vspace{-3mm} \\  \line(1,0){250}} 
-\\ } 
+\newcommand{\Publications}[1]{\miniLeft{[\mycount]}  \miniRight{#1} \\}
 
+\newcommand{\PaperSection}[1]{\linethickness{0.8mm} \textcolor{blue}{\\ {\textbf{#1}} \vspace{-3mm} \\  \line(1,0){197}}
+\\ }
+
+\newcommand{\ProceedingsSection}[1]{\linethickness{0.8mm} \textcolor{blue}{\\ {\textbf{#1}} \vspace{-3mm} \\  \line(1,0){121}}
+\\ }
 
 \begin{document}
 
-\Section{List of Publications by Javad Komijani}
+\PaperSection{List of Publications by Javad Komijani}
 
 \Publications
 { C.~M.~Bender and J.~Komijani,
@@ -223,7 +225,7 @@
 
 %================================
 %================================
-\Section{Conference Proceedings}
+\ProceedingsSection{Conference Proceedings}
 \setcounter{counter}{1}
 %================================
 
@@ -237,10 +239,26 @@
 
 \Publications
 { A.~Altherr {\it et al.},
+  {``Strange and charm contributions to the HVP from C* boundary conditions,''}
+  \textit{PoS Lattice 2022, 281}
+  [arXiv:2301.04385].
+  \inspireurl{https://inspirehep.net/literature/2622246}
+}
+
+\Publications
+{ A.~Altherr {\it et al.},
   {``Hadronic vacuum polarization with C* boundary conditions,''}
   \textit{PoS Lattice 2022, 312}
   [arXiv:2212.11551].
   \inspireurl{https://inspirehep.net/literature/2617383}
+}
+
+\Publications
+{ G.~Abbiendi {\it et al.},
+  {``Space-like and Time-like determination of the Hadronic Leading Order contribution to the Muon $g-2$,''}
+  \textit{Mini-Proceedings of the STRONG2020 Virtual Workshop}
+  [arXiv:2201.12102].
+  \inspireurl{https://inspirehep.net/literature/2021577}
 }
 
 \Publications
@@ -315,7 +333,7 @@
 \Publications   
 { S.~Basak {\it et al.},
   {``Electromagnetic effects on the light hadron spectrum,''}
-  \\{}\textit{J.~Phys. Conf.~Ser.~640, 012052 (2015)}
+  \textit{J.~Phys. Conf.~Ser.~640, 012052 (2015)}
   [arXiv:1510.04997].
   \inspireurl{http://inspirehep.net/record/1395561}
 }
