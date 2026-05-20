@@ -1,3 +1,4 @@
+\PassOptionsToPackage{colorlinks=true,urlcolor=navyblue}{hyperref}
 \documentclass[11pt,a4paper,sans]{moderncv}
 \moderncvstyle{classic}
 \moderncvcolor{blue}
@@ -7,7 +8,7 @@
 \usepackage{multicol}
 
 \definecolor{navyblue}{RGB}{0, 0, 128}
-\usepackage[colorlinks=true, urlcolor=navyblue]{hyperref}
+
 
 \colorlet{bodyrulecolor}{blue}
 \colorlet{sectioncolor}{blue}
@@ -17,100 +18,132 @@
 \name{Javad}{Komijani}
 \title{Curriculum Vitae}
 \address{Zurich, Switzerland}
-\phone[mobile]{+41 76 796 9992}
-\email{jkomijani@phys.ethz.ch}
+\phone[mobile]{+41 76 796 9992}
+\email{jkomijani@ethz.ch}
 \homepage{jkomijani.github.io}
 % \social[linkedin]{javad-komijani-543a31235}
 
 
 \begin{document}
+
 \makecvtitle
 
 
+% ============================
 \section{Professional Summary}
-Highly analytical and detail-oriented researcher with an extensive background in mathematical methods, numerical simulations, theoretical modeling, statistical analysis, signal processing, and machine learning. % Holds an MSc in Electrical Engineering and a PhD in Physics.
-Passionate about applying data science and machine learning to solve complex, real-world problems.
 
+Computational physicist and machine-learning researcher specializing in lattice gauge theory and scientific machine learning.
+Experienced in developing GPU-accelerated machine learning frameworks and differentiable computing tools using PyTorch.
+Strong background in mathematical physics, effective field theories, statistical modeling, and Monte Carlo methods.
+
+Research focus: symmetry-aware (equivariant) machine learning and scientific computing for physical systems, including high-energy physics and cosmology.
+
+% =================
 \section{Education}
+
 \cventry{2015}{PhD in Physics}{Washington University in St. Louis}{}{}{
 \textbf{Thesis}: \textit{Topics in Lattice Gauge Theory and Theoretical Physics}
 \begin{itemize}
-  \item Developed theoretical models based on effective field theories
-  \item Applied Bayesian inference to lattice-QCD data
-  \item Estimated parameters of the Standard Model
-  \item Introduced new concepts in mathematical physics
+  \item Developed statistical models based on effective field theories.
+  \item Built Bayesian inference pipelines for extracting physical parameters from large-scale lattice-QCD simulations using the developed theoretical models.
+  \item Introduced a novel definition for eigenvalues in the context of nonlinear problems.
 \end{itemize}
 }
 \cventry{2009}{MSc in Electrical Engineering}{University of Tehran}{}{}{
 \begin{itemize}
-\item Focus: electromagnetic waves and fields, signal processing, statistical analysis
+\item Focus: electromagnetic waves and fields, signal processing, statistical analysis.
 \end{itemize}
 }
-% \cventry{2006}{BSc in Electrical Engineering}{University of Tehran}{}{}{}
+\cventry{2006}{BSc in Electrical Engineering}{University of Tehran}{}{}{}
 
 
-\section{Technical Skills}
-\cvitem{Programming \& Tools}{Python, Cython, C/C++, bash, MATLAB, Mathematica, PyTorch, Pandas, NumPy, SciPy, Scikit-learn, SQL, git}
-\cvitem{ML \& AI}{Generative Models, Diffusion Models, Normalizing Flows}
-\cvitem{Statistics}{Bayesian inference, Monte Carlo simulations, statistical analysis, optimization}
-\cvitem{Computation}{Numerical Simulations, High‑Performance Computing (HPC)}
+% ========================================
+\section{Research and Teaching Experience}
+
+\cventry{2021--Present}{Postdoctoral Researcher}{ETH Zurich}{}{}{
+\begin{itemize}
+\item Developed a novel score-matching framework for diffusion models on non-Abelian Lie groups for lattice gauge theory, enabling generative modeling of SU($N$) gauge configurations.
+\item Implemented GPU-accelerated distributed training infrastructure for large-scale lattice simulations.
+\item Built installable PyTorch extensions for differentiable linear algebra and adjoint-based ODE solvers supporting Lie-group-valued systems.
+\item Contributed machine-learning modules to the EU interTwin Digital Twin Engine, integrating normalizing flows for lattice QCD simulations.
+\item Supervised PhD and Master’s students in scientific machine learning and computational physics.
+\item Collaborated on international projects in scientific machine learning and high-energy physics.
+\item Performed teaching activities, including teaching quantum mechanics.
+\end{itemize}
+}
+\cventry{2019--2020}{Postdoctoral Researcher}{University of Tehran}{}{}{
+\begin{itemize}
+\item Applied lattice-QCD simulations and Bayesian analysis to determine Standard Model parameters.
+\item Organized a workshop on lattice field theory, teaching lattice methods to students from various universities in Tehran.
+\end{itemize}
+}
+\cventry{2017--2018}{Postdoctoral Researcher}{University of Glasgow}{}{}{
+\begin{itemize}
+\item Focused on determination of various form factors and quark condensates,
+using lattice-QCD Monte-Carlo simulations and Bayesian analysis.
+\item Collaborated in teaching activities, including scientific computing.
+\end{itemize}
+}
+\cventry{2015--2017}{Postdoctoral Researcher}{Technical University of Munich}{}{}{
+\begin{itemize}
+\item Focused on determination of quark masses and various decay constants,
+using lattice-QCD Monte-Carlo simulations and Bayesian analysis.
+\item Collaborated in teaching activities, including teaching quantum field theory and elementary particle physics.
+\end{itemize}
+}
 
 
-\section{Selected Projects}
-\cvitem{\href{https://github.com/jkomijani/normflow_}{Normflow}}{Normalizing Flows in PyTorch; supporting lattice gauge theory.}
-%
-\cvitem{\href{https://github.com/jkomijani/torch_linagl_ext}{torch\_linagl}}{Linear Algebra Extension for PyTorch; supporting automatic differentiation for eigenvalue and singular value decompositions of unitary matrices.}
-%
-\cvitem{\href{https://github.com/jkomijani/torch_solve_ext}{torch\_solve}}{PyTorch Extension for Solving ODE; supporting automatic differentiation using the adjoint sensitivity method for unitary matrices.}
-% \cvitem{complex Jacobian}{\href{https://github.com/jkomijani/complex_jacobian}{Complex Jacobian Computation} — Tools for complex-valued automatic differentiation.}
-\cvitem{\href{https://github.com/jkomijani/diffusion_model}{Diffusion}}{Diffusion Models in PyTorch;  supporting unitary matrices.}
-%
-\cvitem{\href{https://www.intertwin.eu/article/thematic-module-normflow}{interTwin}}{Contributed the normflow package to the interTwin physics thematic module—integrated normalizing flows into the interTwin Digital Twin Engine for lattice QCD simulations.}
-%
-\cvitem{\href{https://jkomijani.github.io/research.html\#quark\_masses}{Quark Masses}}{Precisely calculated the up-, down-, strange-, charm-, and bottom-quark masses using the MILC highly improved staggered-quark ensembles.}
+% =================================================
+\section{Scientific Software and ML Infrastructure}
+
+
+\cventry{\href{https://github.com/jkomijani/lattice_ml}{lattice\_ml}}{PyTorch scientific software package}{}{}{}{
+\begin{itemize}
+\item Diffusion-based generative modeling on Lie groups and gauge theories.
+\item Adjoint-based differentiable ODE solvers for scalar and Lie-group-valued systems.
+\item Differentiable SVD and eigendecomposition of unitary matrices.
+\end{itemize}
+}
+\cvitem{\href{https://github.com/jkomijani/normflow_}{normflow}}{PyTorch software package for normalizing flows on Lie groups and lattice gauge theory.
+}
+\cvitem{\href{https://www.intertwin.eu/article/thematic-module-normflow}{interTwin}}{Contributed normalizing-flow-based ML modules to the EU interTwin Digital Twin Engine for lattice QCD simulations.}
+
+
+% =========================
+\section{Selected Projects}  % Physics and Mathematical Physics Projects}
+
+\cvitem{\href{https://jkomijani.github.io/research.html\#quark\_masses}{SU($N$) Diffusion}}{Extended score-matching diffusion models to Lie groups for lattice gauge theory and applied generative modeling of SU(3) gauge configurations in two and four dimensions.}
+
+\cvitem{\href{https://jkomijani.github.io/research.html\#quark\_masses}{Quark Masses}}{Proposed and implemented a method to calculate heavy quark masses; led to precise determination of the up-, down-, strange-, charm-, and bottom-quark masses using the MILC highly improved staggered-quark ensembles.}
 %
 \cvitem{\href{https://jkomijani.github.io/research.html\#quark\_masses}{MRS Mass}}{Defined a novel quark mass scheme, the minimal-renormalon-subtracted (MRS) mass, which is free from the shortcomings of other quark masses and provides a more robust foundation for precise quark mass determination.}
 %
 \cvitem{\href{https://jkomijani.github.io/research.html\#nonlinear\_eigenvalue}{Eigenvalues}}{Generalized eigenvalue problems to non-linear cases using properties of solutions to the Schr\"odinger equation.}
 
 
-\section{Experience}
-\cventry{2021--Present}{Senior Postdoctoral Researcher}{ETH Zurich}{}{}{
-\begin{itemize}
-  \item Developed ML algorithms to generate lattice field configurations
-  \item Worked extensively with HPC systems for lattice‑QCD simulations
-  \item Collaborated internationally on computational/theoretical projects
-  \item Supervised PhD/MSc students and taught Quantum Mechanics
-\end{itemize}
-}
-\cventry{2019--2020}{Postdoctoral Researcher}{University of Tehran}{}{}{
-\begin{itemize}
-\item Applied lattice-QCD simulations and Bayesian analysis to determine Standard Model parameters
-\end{itemize}
-}
-\cventry{2017--2018}{Postdoctoral Researcher}{University of Glasgow}{}{}{
-\begin{itemize}
-\item Focused on determination of various form factors and quark condensates,
-using lattice-QCD Monte-Carlo simulations and Bayesian analysis
-\end{itemize}
-}
-\cventry{2015--2017}{Postdoctoral Researcher}{Technical University of Munich}{}{}{
-\begin{itemize}
-\item Focused on determination of quark masses and various decay constants,
-using lattice-QCD Monte-Carlo simulations and Bayesian analysis
-\end{itemize}
-}
+% ========================
+\section{Technical Skills}
+
+\cvitem{Programming}{Python, C++, Cython, Bash}
+\cvitem{ML/AI}{PyTorch, Diffusion Models, Normalizing Flows, Score Matching, Distributed Training}
+\cvitem{Mathematics}{Differential Equations, Linear Algebra, Optimization, Statistical Modeling}
+\cvitem{Tools}{Linux, Git, SQL, Pandas}
+\cvitem{Scientific}{NumPy, SciPy, Scikit-learn, Monte Carlo Methods}
 
 
+% ========================
 \section{Language Skills}
+
 \cvitem{English}{Fluent}
 % \cvitem{Persian}{Mother tongue}
-\cvitem{German}{Basic}
+\cvitem{German}{Basic (A2)}
 
 
+% =============================
 \section{Publications}
-A complete list of over 25 peer-reviewed publications can be found at \href{https://jkomijani.github.io/docs/Publications.pdf}{this link}.
 
-\clearpage
+
+Full list of peer-reviewed publications: \href{https://jkomijani.github.io/docs/Publications.pdf}{available here}.
+
 
 \end{document}
