@@ -1,10 +1,11 @@
 \PassOptionsToPackage{colorlinks=true,urlcolor=navyblue}{hyperref}
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[12pt,a4paper,sans]{moderncv}
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.84]{geometry}
+\setlength{\hintscolumnwidth}{2cm}
 \usepackage{multicol}
 
 \definecolor{navyblue}{RGB}{0, 0, 128}
@@ -59,37 +60,37 @@ Research focus: symmetry-aware (equivariant) machine learning for high-energy ph
 
 
 % ========================================
-\section{Research and Teaching Experience}
+\section{Research Experience}
 
-\cventry{2021--Present}{Postdoctoral Researcher}{ETH Zurich}{}{}{
+\cventry{2021--2026}{Postdoctoral Researcher}{ETH Zurich}{}{}{
 \begin{itemize}
 \item Developed a novel score-matching framework for diffusion models on non-Abelian Lie groups for lattice gauge theory, enabling generative modeling of SU($N$) gauge configurations.
-\item Implemented GPU-accelerated distributed training infrastructure for large-scale lattice simulations.
+\item Implemented distributed training infrastructure for large-scale lattice simulations.
 \item Built installable PyTorch extensions for differentiable linear algebra and adjoint-based ODE solvers supporting Lie-group-valued systems.
 \item Contributed machine-learning modules to the EU interTwin Digital Twin Engine, integrating normalizing flows for lattice simulations.
 \item Supervised PhD and Master’s students in scientific machine learning and computational physics.
 \item Collaborated on international projects in scientific machine learning and high-energy physics.
-\item Performed teaching activities, including teaching quantum mechanics.
+% \item Performed teaching activities, including teaching quantum mechanics.
 \end{itemize}
 }
 \cventry{2019--2020}{Postdoctoral Researcher}{University of Tehran}{}{}{
 \begin{itemize}
-\item Applied lattice-QCD simulations and Bayesian analysis to determine Standard Model parameters.
-\item Organized a workshop on lattice field theory, teaching lattice methods to students from various universities in Tehran.
+\item Applied lattice simulations and Bayesian analysis to determine Standard Model parameters.
+% \item Organized a workshop on lattice field theory, teaching lattice methods to students from various universities in Tehran.
 \end{itemize}
 }
 \cventry{2017--2018}{Postdoctoral Researcher}{University of Glasgow}{}{}{
 \begin{itemize}
 \item Focused on determination of various form factors and quark condensates,
-using lattice-QCD simulations and Bayesian analysis.
-\item Collaborated in teaching activities, including scientific computing.
+using lattice simulations and Bayesian analysis.
+% \item Collaborated in teaching activities, including scientific computing.
 \end{itemize}
 }
 \cventry{2015--2017}{Postdoctoral Researcher}{Technical University of Munich}{}{}{
 \begin{itemize}
 \item Focused on determination of quark masses and various decay constants,
-using lattice-QCD simulations and Bayesian analysis.
-\item Collaborated in teaching activities, including teaching quantum field theory and elementary particle physics.
+using lattice simulations and Bayesian analysis.
+% \item Collaborated in teaching activities, including teaching quantum field theory and elementary particle physics.
 \end{itemize}
 }
 
@@ -125,11 +126,104 @@ using lattice-QCD simulations and Bayesian analysis.
 % ========================
 \section{Technical Skills}
 
-\cvitem{Programming}{Python, C++, Cython, Bash}
-\cvitem{ML/AI}{PyTorch, Diffusion Models, Normalizing Flows, Score Matching, Distributed Training}
-\cvitem{Mathematics}{Differential Equations, Linear Algebra, Optimization, Statistical Modeling}
-\cvitem{Tools}{Linux, Git, SQL, Pandas}
-\cvitem{Scientific}{NumPy, SciPy, Scikit-learn, Monte Carlo Methods}
+\cvitem{Programming}{Python, C++, Cython, Bash.}
+\cvitem{ML/AI}{PyTorch, Diffusion Models, Normalizing Flows, Score Matching, Distributed Training.}
+\cvitem{Mathematics}{Differential Equations, Linear Algebra, Optimization, Statistical Modeling.}
+\cvitem{Tools}{Linux, Git, SQL, Pandas.}
+\cvitem{Scientific}{NumPy, SciPy, Scikit-learn, Monte Carlo Methods.}
+
+
+% ========================
+\section{Supervision and Mentoring}
+
+\cvitem{Postdoc.}{
+\begin{itemize}
+\item Gaurav Sinha Ray (2023--2025) --- ML modules for EU interTwin lattice QCD project.
+\end{itemize}
+}
+
+
+\cvitem{PhD students}{
+\begin{itemize}
+\item Octavio Vega (2024--present) --- Group-equivariant diffusion models for lattice field theory.
+\item Ben Izett (2026) --- Fourier acceleration for SU($N$) lattice gauge theory.
+\end{itemize}
+}
+
+
+\cvitem{MSc students}{
+\begin{itemize}
+\item Lara Turgut (2025--2026) --- Gauge-equivariant diffusion models for lattice field theory.
+\item Ahmed Chahlaoui (2024--2025) --- Autoregressive models for lattice configurations.
+\item Antoine Misery (2024) --- Continuous-time generative models for lattice fields.
+\item Flavia Giehr (2024) --- Continuous normalizing flows with adjoint methods.
+\item Klemen Kersic (2023) --- Rational-quadratic splines for normalizing flows.
+\item Lea Segner (2023, co-supervised with J. Pinto) --- Simulated tempering for topological freezing.
+\end{itemize}
+}
+
+
+\cvitem{BSc students}{
+\begin{itemize}
+\item Nicolas M\"uller (2025) --- Path integral formulation of quantum mechanics and Monte Carlo Simulations.
+\end{itemize}
+}
+
+
+\cvitem{Interns}{
+\begin{itemize}
+\item Elias Nyholm (2023) --- CNN architectures in arbitrary dimensions.
+\end{itemize}
+}
+
+
+\section{Teaching Experience}
+
+\cvitem{ETH Zurich}{
+\begin{itemize}
+\item \textbf{Head teaching assistant; substitute lecturer:}
+%
+Quantum Mechanics II (Spring 2024),
+Quantum Mechanics I (Fall 2024).
+%
+\item \textbf{Proseminar mentoring and supervision:}
+%
+General Relativity (Spring 2025),
+Riemann Surfaces in Mathematical Physics (Spring 2023),
+Systems Out of Equilibrium (Fall 2022),
+Quantum Information (Spring 2022),
+Theoretical Physics (Fall 2021).
+\end{itemize}
+}
+
+\cvitem{UT}{
+\begin{itemize}
+\item \textbf{Organizer and lecturer:} Workshop on lattice field theory for students from several universities in Tehran (Fall 2019).
+\end{itemize}
+}
+
+\cvitem{UG}{
+\begin{itemize}
+\item \textbf{Teaching assistant:} C Programming under Linux (Spring 2018).
+\end{itemize}
+}
+
+\cvitem{TUM}{
+\begin{itemize}
+\item \textbf{Teaching assistant:} Elementary Particle Physics (Spring 2016) and Quantum Field Theory (Fall 2015).
+\end{itemize}
+}
+
+\cvitem{Washington University in St. Louis}{
+\begin{itemize}
+\item \textbf{Teaching assistant:}
+Statistical Mechanics (Spring 2015),
+Quantum Mechanics (Fall 2013),
+Physics I (Fall 2012),
+Physics II (Spring 2011),
+Special Relativity (Spring 2011).
+\end{itemize}
+}
 
 
 % ========================
