@@ -7,7 +7,10 @@
 \usepackage{color}
 \usepackage[colorlinks=true,urlcolor=blue]{hyperref} % Required for adding links	and customizing them
 
-\newcommand{\inspireurl}[1]{\\\href{#1}{INSPIRE-HEP entry}}
+
+\usepackage{xcolor}
+\definecolor{darkgreen}{RGB}{0, 100, 0}
+\newcommand{\inspireurl}[1]{{\hypersetup{urlcolor=darkgreen}\\\href{#1}{INSPIRE-HEP entry}}}
 
 \pagestyle{empty} % Removes page numbering
 \setlength{\parindent}{0in} % to remove the tab at the beginning of each paragraph
@@ -39,10 +42,12 @@
 
 \PaperSection{Publications by Javad Komijani}
 
+
 \Publications
 {J.~Komijani,
 {``Noise scheduling and linear dynamics in diffusion models on Lie groups,''}
-[arXiv:2605.17326].
+% [arXiv:2605.17326].
+[\href{https://arxiv.org/abs/2605.17326}{arXiv:2605.17326}].
  \inspireurl{https://inspirehep.net/literature/3157133}
 }
 
@@ -50,14 +55,23 @@
 \Publications
 {J.~Komijani, M.~Marinkovic and L.~Turgut,
 {``Diffusion model for SU(N) gauge theories,''}
-[arXiv:2605.06134].
+% [arXiv:2605.06134].
+[\href{https://arxiv.org/abs/2605.06134}{arXiv:2605.06134}].
  \inspireurl{https://inspirehep.net/literature/3152687}
+}
+
+
+\Publications
+{A.~Manzi  \textit{et al.},
+{``interTwin: Advancing Scientific Digital Twins through AI, Federated Computing and Data''},
+\href{https://doi.org/10.1016/j.future.2025.108312}{\textit{Future Generation Computer Systems, 179, 108312 (2026)}}.
 }
 
 \Publications
 {O.~Vega, J.~Komijani, A.~El-Khadra and M.~Marinkovic,
 {``Group-Equivariant Diffusion Models for Lattice Field Theory,''}
-[arXiv:2510.26081].
+% [arXiv:2510.26081].
+[\href{https://arxiv.org/abs/2510.26081}{arXiv:2510.26081}].
 \inspireurl{https://inspirehep.net/literature/3075176}
 }
 
@@ -73,8 +87,7 @@
 \Publications
 {R.~Aliberti \textit{et al.},
 {``The anomalous magnetic moment of the muon in the Standard Model: an update,''}
-\href{https://doi.org/10.1016/j.physrep.2025.08.002}{
-\textit{Phys. Rept. 1143, 1-158 (2025)}}
+\href{https://doi.org/10.1016/j.physrep.2025.08.002}{\textit{Phys. Rept. 1143, 1-158 (2025)}}
 [arXiv:2505.21476].
 \inspireurl{https://inspirehep.net/literature/2925594}
 }
@@ -83,8 +96,7 @@
 \Publications
 { C.~M.~Bender and J.~Komijani,
   {``Addendum: Painlev{\'{e}} transcendents and PT-symmetric Hamiltonians,''}
-  \href{https://doi.org//10.1088/1751-8121/ac4fa7}{
-  \textit{J.~Phys.~A: Math. Theor.~55, 109401 (2022)}} [arXiv:2107.04935].
+  \href{https://doi.org//10.1088/1751-8121/ac4fa7}{\textit{J.~Phys.~A: Math. Theor.~55, 109401 (2022)}} [arXiv:2107.04935].
   \inspireurl{https://inspirehep.net/literature/1881630}
 }
 
@@ -92,15 +104,14 @@
 { J.~Komijani,
   {``First-order nonlinear eigenvalue problems involving functions of a general
   oscillatory behavior,''}
-  \href{https://doi.org/10.1088/1751-8121/ac2e29}{
-  \textit{J.~Phys.~A: Math. and Theor.~54, 465202 (2021)}} [arXiv:2107.02475].
+  \href{https://doi.org/10.1088/1751-8121/ac2e29}{\textit{J.~Phys.~A: Math. and Theor.~54, 465202 (2021)}} [arXiv:2107.02475].
    \inspireurl{https://inspirehep.net/literature/1964116}
 }
 
 \Publications
 { J.~Komijani, P.~Petreczky and J.~H.~Weber,
   {``Strong coupling constant and quark masses from lattice QCD,''}
-  \textit{Prog. Part. Nucl. Phys.~113, 103788 (2020)}
+  \href{https://doi.org/10.1016/j.ppnp.2020.103788}{\textit{Prog. Part. Nucl. Phys.~113, 103788 (2020)}}
   [arXiv:2003.11703].
   \inspireurl{http://inspirehep.net/record/1788480}
 }
@@ -108,7 +119,7 @@
 \Publications
 { L.~J.~Cooper \textit{et al.},
   {``$B_c \to B_{s(d)}$ form factors from lattice QCD,''}
-  \textit{Phys.~Rev. D~102, 014513 (2020)}
+  \href{https://doi.org/10.1103/PhysRevD.102.014513}{\textit{Phys.~Rev. D~102, 014513 (2020)}}
   [arXiv:2003.00914].
   \inspireurl{http://inspirehep.net/record/1783324}
 }
@@ -116,15 +127,14 @@
 \Publications
 { C.M.~Bender, J. Komijani, Q. Wang,
   {``Nonlinear eigenvalue problems for generalized Painlev\'e equations,''}
-  \href{https://doi.org/10.1088/1751-8121/ab2bcc}{
-  \textit{J.~Phys.~A: Math. and Theor.~52, 315202 (2019)}} [arXiv:1903.10640].
+  \href{https://doi.org/10.1088/1751-8121/ab2bcc}{\textit{J.~Phys.~A: Math. and Theor.~52, 315202 (2019)}} [arXiv:1903.10640].
   \inspireurl{http://inspirehep.net/record/3049068}
 }
 
 \Publications 
 { C.T.H.~Davies \textit{et al.},
   {``Determination of the quark condensate from heavy-light current-current correlators in full lattice QCD,''}
-  \textit{Phys.~Rev. D~100, 034506 (2019)}
+  \href{https://doi.org/10.1103/PhysRevD.100.034506}{\textit{Phys.~Rev. D~100, 034506 (2019)}}
   [arXiv:1811.04305].
   \inspireurl{http://inspirehep.net/record/1703119}
 } 
@@ -132,7 +142,7 @@
 \Publications 
 { N.~Brambilla, H.~S.~Chung and J.~Komijani,
   {``Inclusive decays of $\eta_c$ and $\eta_b$ at NNLO with large $n_f$ resummation,''}
-  \textit{Phys.~Rev. D~98, 114020 (2018)}
+  \href{https://doi.org/10.1103/PhysRevD.98.114020}{\textit{Phys.~Rev. D~98, 114020 (2018)}}
   [arXiv:1810.02586].
   \inspireurl{http://inspirehep.net/record/1697096}
 }
@@ -140,7 +150,7 @@
 \Publications 
 { A.~Bazavov \textit{et al.},
   {``$|V_{us}|$ from $K_{\ell 3}$ decay and four-flavor lattice QCD,''}
-  \textit{Phys.~Rev. D~99, 114509 (2019)}
+  \href{https://doi.org/10.1103/PhysRevD.99.114509}{\textit{Phys.~Rev. D~99, 114509 (2019)}}
   [arXiv:1809.02827].
   \inspireurl{http://inspirehep.net/record/1693293}
 }
@@ -149,7 +159,7 @@
 \Publications 
 { A.~Bazavov \textit{et al.},
   {``Up-, down-, strange-, charm-, and bottom-quark masses from four-flavor lattice QCD,''}
-  \textit{Phys.~Rev. D~98, 054517 (2018)}
+  \href{https://doi.org/10.1103/PhysRevD.98.054517}{\textit{Phys.~Rev. D~98, 054517 (2018)}}
   [arXiv:1802.04248].
   \inspireurl{http://inspirehep.net/record/1654552}
 }
@@ -157,7 +167,7 @@
 \Publications 
 { A.~Bazavov \textit{et al.},
   {``$B$- and $D$-meson leptonic decay constants from four-flavor lattice QCD,''}
-  \textit{Phys.~Rev. D~98, 074512 (2018)}
+  \href{https://doi.org/10.1103/PhysRevD.98.074512}{\textit{Phys.~Rev. D~98, 074512 (2018)}}
   [arXiv:1712.09262].
   \inspireurl{http://inspirehep.net/record/1644910}
 }
@@ -165,7 +175,7 @@
 \Publications
 { N.~Brambilla , J.~Komijani, A.S.~Kronfeld, A.~Vairo,
   {``Relations between Heavy-light Meson and Quark Masses,''}
-  \textit{Phys.~Rev. D~97, 034503 (2018)}
+  \href{https://doi.org/10.1103/PhysRevD.97.034503}{\textit{Phys.~Rev. D~97, 034503 (2018)}}
   [arXiv:1712.04983].
   \inspireurl{http://inspirehep.net/record/1643281}
 }
@@ -173,7 +183,7 @@
 \Publications 
 { J.~Komijani,
   {``A discussion on leading renormalon in the pole mass,''}
-  \textit{JHEP 1708, 062 (2017)}
+  \href{https://doi.org/10.1007/JHEP08(2017)062}{\textit{JHEP 1708, 062 (2017)}}
   [arXiv:1701.00347].
   \inspireurl{http://inspirehep.net/record/1507484}
 }
@@ -181,7 +191,7 @@
 \Publications
 { J.A.~Bailey \textit{et al.},
   {``$B\ensuremath{\rightarrow}K{l}^{+}{l}^{-}$ decay form factors from three-flavor lattice QCD,''}
-  \textit{Phys.~Rev. D~93, 025026 (2016)}
+  \href{https://doi.org/10.1103/PhysRevD.93.025026}{\textit{Phys.~Rev. D~93, 025026 (2016)}}
   [arXiv:1509.06235].
   \inspireurl{http://inspirehep.net/record/1394175}
 }
@@ -189,7 +199,7 @@
 \Publications 
 { J.A.~Bailey \textit{et al.}, 
   {``$|V_{ub}|$ from $B\to\pi\ell\nu$ decays and (2+1)-flavor lattice QCD,''} 
-  \textit{Phys.~Rev. D~92, 014024 (2015)}
+  \href{https://doi.org/10.1103/PhysRevD.92.014024}{\textit{Phys.~Rev. D~92, 014024 (2015)}}
   [arXiv:1503.07839].
   \inspireurl{http://inspirehep.net/record/1356283}
 }
@@ -197,7 +207,7 @@
 \Publications 
 { J.A.~Bailey \textit{et al.},
   {``$B\to D\ell\nu$ form factors at nonzero recoil and $|V_{cb}|$ from 2+1-flavor lattice QCD,''}
-  \textit{Phys.~Rev. D~92, 034506 (2015)}
+  \href{https://doi.org/10.1103/PhysRevD.92.034506}{\textit{Phys.~Rev. D~92, 034506 (2015)}}
   [arXiv:1503.07237].
   \inspireurl{http://inspirehep.net/record/1355553}
 }
@@ -205,7 +215,7 @@
 \Publications
 { A.~Bazavov  \textit{et al.},
   {``Gradient flow and scale setting on MILC HISQ ensembles,''}
-  \textit{Phys.~Rev. D~93, 094510 (2016)}
+  \href{https://doi.org/10.1103/PhysRevD.93.094510}{\textit{Phys.~Rev. D~93, 094510 (2016)}}
   [arXiv:1503.02769].
   \inspireurl{http://inspirehep.net/record/1351452}
 }
@@ -213,8 +223,7 @@
 \Publications
 { C.M.~Bender and J.~Komijani, 
   {``Painlev\'e Transcendents and ${\mathcal{P}}{\mathcal{T}}$-Symmetric Hamiltonians,''}
-  \href{https://doi.org/10.1088/1751-8113/48/47/475202}{
-  \textit{J.~Phys.~A: Math. and Theor. 48, 475202 (2015)}}
+  \href{https://doi.org/10.1088/1751-8113/48/47/475202}{\textit{J.~Phys.~A: Math. and Theor. 48, 475202 (2015)}}
   [arXiv:1502.04089].
   \inspireurl{http://inspirehep.net/record/1344799}
 }
@@ -222,7 +231,7 @@
 \Publications
 { A.~Bazavov \textit{et al.},
   {``Charmed and light pseudoscalar meson decay constants from four-flavor lattice QCD with physical light quarks,''}
-  \textit{Phys.~Rev. D~90, 074509 (2014)}
+  \href{https://doi.org/10.1103/PhysRevD.90.074509}{\textit{Phys.~Rev. D~90, 074509 (2014)}}
   [arXiv:1407.3772].
   \inspireurl{http://inspirehep.net/record/1306303}
 }
@@ -230,16 +239,15 @@
 \Publications
 { C.M.~Bender, A.~Fring and J.~Komijani,
   {``Nonlinear Eigenvalue Problems,''}
-  \href{https://doi.org/10.1088/1751-8113/47/23/235204}{
-  \textit{J.~Phys.~A: Math. and Theor.~47, 235204 (2014)}}
+  \href{https://doi.org/10.1088/1751-8113/47/23/235204}{\textit{J.~Phys.~A: Math. and Theor.~47, 235204 (2014)}}
   [arXiv:1401.6161].
-   \inspireurl{https://inspirehep.net/literature/}
+   \inspireurl{https://inspirehep.net/record/3023331}
 }
 
 \Publications
 { C.~Bernard and J.~Komijani, 
   {``Chiral Perturbation Theory for All-Staggered Heavy-Light Mesons,''}
-  \textit{Phys.~Rev. D~88, 094017 (2013)}
+  \href{https://doi.org/10.1103/PhysRevD.88.094017}{\textit{Phys.~Rev. D~88, 094017 (2013)}}
   [arXiv:1309.4533].
   \inspireurl{http://inspirehep.net/record/1254568}
 }
@@ -247,7 +255,7 @@
 \Publications
 { A.~Bazavov  \textit{et al.},
   {``Lattice QCD ensembles with four flavors of highly improved staggered quarks,''} 
-  \textit{Phys.~Rev. D~87, 054505 (2013)}
+ \href{https://doi.org/10.1103/PhysRevD.87.054505}{\textit{Phys.~Rev. D~87, 054505 (2013)}}
   [arXiv:1212.4768].
   \inspireurl{http://inspirehep.net/record/1208113}
 }
@@ -439,7 +447,6 @@
   \inspireurl{http://inspirehep.net/record/1198163}
 }
 
-% The following two proceedings do not have proper reference info, so I drop them.
 \Publications
  { J.~Komijani, A.~Mirkamali and J.~Nateghi, 
    {``Combining multiple knife-edge diffraction and ground reflections for terrain path loss diffraction,''} 
