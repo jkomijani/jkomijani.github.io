@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[12pt,a4paper,sans]{moderncv}
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 
@@ -34,9 +34,7 @@
 
 \section{Professional Summary}
 
-Computational scientist and machine learning researcher with 10+ years of experience in scientific computing and 5 years in generative modeling.
-Specialized in PyTorch-based diffusion models, normalizing flows, and differentiable programming.
-Strong background in applied mathematics, statistical modeling, and scientific software engineering.
+Computational scientist and machine learning researcher specializing in generative models, diffusion processes, and normalizing flows on structured and symmetry-constrained domains. Experienced in building PyTorch-based scientific ML frameworks, distributed training systems, and GPU-accelerated simulation pipelines. Focus on scalable generative modeling, geometric deep learning, and scientific computing at scale.
 
 % Senior computational physicist with over 10 years of experience in scientific computing, 5 years in scientific machine learning, 
 % and an extensive background in mathematical methods, numerical simulations, theoretical modeling, statistical analysis.
@@ -45,6 +43,82 @@ Strong background in applied mathematics, statistical modeling, and scientific s
 % Passionate about applying data science and machine learning to solve complex, real-world problems.
 % Expert in differential equations, statistical analysis, and numerical optimization. 
 % Bridges advanced mathematical modeling with machine learning to solve complex computational problems.
+
+ 
+% ==========================
+\section*{Selected Research Impact}
+
+\begin{itemize}[leftmargin=*]
+    \item 26 peer-reviewed publications, 3000+ citations, h-index 19.
+    \item Contributions to precision Standard Model parameter determinations (FLAG / PDG collaborations).
+    \item Developed frameworks for controlling multi-scale expansions in quantum field theory.
+    \item Introduced methods for handling divergent perturbative series in physics computations.
+    \item Developed an implicit score-matching framework for Lie groups.
+    \item Developed GPU-accelerated software frameworks for diffusion models and normalizing flows.
+\end{itemize}
+
+
+\section*{Research \& Technical Experience}
+
+\cventry{2021--2026}{Postdoctoral Researcher}{ETH Zurich}{}{}{
+\begin{itemize}
+\item Developed diffusion and score-based generative models on Lie groups for lattice gauge theory.
+\item Built differentiable computing frameworks using PyTorch (ODE solvers and linear algebra).
+\item Integrated normalizing flow modules into the EU interTwin Digital Twin Engine.
+\item Developed distributed training infrastructure for large-scale lattice simulations.
+\item Supervised PhD, MSc, BSc, and internship projects in scientific machine learning.
+\end{itemize}
+}
+
+\cventry{2015--2021}{Postdoctoral Researcher}{TU Munich / Glasgow / Tehran}{}{}{
+\vspace{-0.5em}
+\begin{itemize}
+\item Monte Carlo simulations for lattice QCD observable.
+\item Bayesian parameter estimation from Lattice QCD simulations.
+% \item Developed models and applied Bayesian inference \& Monte Carlo simulations to large-scale datasets.
+\item Developed scalable lattice-QCD simulation pipelines in HPC environments.
+\item Collaborated internationally in computational and mathematical physics projects.
+\end{itemize}
+}
+
+
+%--------------------------------------------------
+\section{Open-Source Scientific ML Software}
+
+\cventry{\href{https://github.com/jkomijani/lattice_ml}{lattice\_ml}}{Installable Python package for scientific machine learning}{}{}{}{
+\begin{itemize}
+\item Diffusion-based generative modeling on Lie groups and gauge theories.
+\item Adjoint-based differentiable ODE solvers for scalar and Lie-group-valued systems.
+\item Differentiable SVD and eigendecomposition of unitary matrices.
+\end{itemize}
+}
+\cvitem{\href{https://github.com/jkomijani/normflow_}{normflow}}{Installable Python package for normalizing flows on Lie groups and lattice gauge theory, including symmetry-preserving transformations and flow-based sampling methods.}
+\cvitem{\href{https://www.intertwin.eu/article/thematic-module-normflow}{interTwin}}{Contributed normalizing-flow-based ML modules to the EU interTwin Digital Twin Engine.}
+
+
+\clearpage
+
+% ==========================
+\section*{Mentoring \& Leadership}
+
+\cventry{Mentoring}{Co-supervised PhD, MSc, and BSc researchers in physics \& scientific ML:}{}{}{}{
+     \begin{itemize}
+    \item Gauge-equivariant diffusion models for lattice field theory (PhD project)
+    \item Fourier acceleration methods for SU(N) lattice gauge theory (PhD project)
+    \item Autoregressive generative models for structured lattice configurations (MSc project)
+    \item Continuous-time generative models and normalizing flows (MSc projects)
+    \item Stability and sampling improvements for topological systems (MSc project)
+    \item CNN architectures in arbitrary dimensions for scientific data (Intern project)
+\end{itemize}
+}
+
+\cventry{Organization}{Co-organized workshops on physics \& machine learning:}{}{}{}{
+\begin{itemize}
+\item ZPW 2026 — Machine Learning Techniques for Particle Physics.
+\item QCD 2025 — Symposium on QCD Factorization.
+\item ML Lattice 2025 — Machine learning approaches in Lattice QCD.
+\end{itemize}
+}
 
 %--------------------------------------------------
 \section{Technical Skills}
@@ -56,61 +130,34 @@ Strong background in applied mathematics, statistical modeling, and scientific s
 \cvitem{Scientific}{NumPy, SciPy, Scikit-learn, HPC, Parallel Computing, Monte Carlo Methods}
 
 
-%--------------------------------------------------
-\section{Professional Experience}
-
-\cventry{2021--Present}{Senior Postdoctoral Researcher}{ETH Zurich}{}{}{
-\vspace{-0.5em}
-\begin{itemize}
-\item Developed a novel score-matching framework for diffusion models and normalizing flows on Lie groups, and implemented installable GPU-based distributed training infrastructure for large-scale lattice simulations.
-\item Developed installable PyTorch extension packages for differentiable linear algebra and ODE solvers.
-% \item Implemented distributed GPU training and large-scale numerical simulation workflows on HPC clusters.
-% \item Executed computational workflows on HPC clusters and performed statistical analysis on resulting data.
-\item Developed and contributed ML modules to the interTwin (EU interdisciplinary Digital Twin Engine).
-\item Supervised PhD and Master’s students and taught quantum mechanics.
-\end{itemize}
-}
-
-\cventry{2015--2021}{Postdoctoral Researcher}{TU Munich / Glasgow / Tehran}{}{}{
-\vspace{-0.5em}
-\begin{itemize}
-\item Developed models and applied Bayesian inference \& Monte Carlo simulations to large-scale datasets.
-\item Developed scalable lattice-QCD simulation pipelines in HPC environments.
-\item Collaborated internationally in computational and mathematical physics projects.
-\end{itemize}
-}
-
-%--------------------------------------------------
-\section{Open-Source Scientific ML Packages}
-
-\cvitem{\href{https://github.com/jkomijani/normflow_}{normflow}}{
-Installable PyTorch package for normalizing flows on Lie groups \& lattice gauge theory.}
-
-\cvitem{\href{https://github.com/jkomijani/diffusion}{diffusion}}{
-Installable PyTorch package for diffusion-based generative modeling on Lie groups \& gauge theories.}
-
-\cvitem{\href{https://github.com/jkomijani/torch_linalg_ext}{torch\_linalg}}{
-Installable PyTorch package for differentiable SVD and eigendecomposition of unitary matrices.}
-
-\cvitem{\href{https://github.com/jkomijani/torch_solve_ext}{torch\_solve}}{
-Installable PyTorch package implementing adjoint-based differentiable ODE solvers for scalar and Lie-group-valued systems.}
-
-%--------------------------------------------------
+% =================
 \section{Education}
 
-\cventry{2015}{PhD in Physics}{Washington University in St. Louis}{}{}{}
-\cventry{2009}{MSc in Electrical Engineering}{University of Tehran}{}{}{}
+\cventry{2015}{PhD in Physics}{Washington University in St. Louis}{}{}{
+\textbf{Thesis}: \textit{Topics in Lattice Gauge Theory and Theoretical Physics}
+\begin{itemize}
+  \item Developed EFT-based frameworks and Bayesian inference methods for lattice QCD.
+  \item Performed precision determinations of hadronic observables in lattice QCD.
+  \item Developed a novel definition of eigenvalue problems for nonlinear systems arising in physics.
+\end{itemize}
+}
+\cventry{2009}{MSc in Electrical Engineering}{University of Tehran}{}{}{
+\begin{itemize}
+\item Focus: electromagnetic waves and fields, signal processing, statistical analysis.
+\end{itemize}
+}
+\cventry{2006}{BSc in Electrical Engineering}{University of Tehran}{}{}{}
 
 %--------------------------------------------------
 \section{Publications}
 
-\cvitem{}{A complete list of over 25 peer-reviewed publications can be found at \href{https://jkomijani.github.io/docs/Publications.pdf}{this link}.}
+\cvitem{}{A complete list of over 26 peer-reviewed publications can be found at \href{https://jkomijani.github.io/docs/Publications.pdf}{this link}.}
 
 %--------------------------------------------------
 \section{Languages}
 
 \cvitem{English}{Fluent}
-\cvitem{German}{Elementary}
+\cvitem{German}{Basic (A2)}
 
 
 \clearpage
