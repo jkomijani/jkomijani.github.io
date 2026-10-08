@@ -5,7 +5,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.85]{geometry}
-\setlength{\hintscolumnwidth}{2cm}
+\setlength{\hintscolumnwidth}{2.4cm}
 \usepackage{multicol}
 
 \definecolor{navyblue}{RGB}{0, 0, 128}
@@ -19,7 +19,7 @@
 \title{Curriculum Vitae}
 \address{Zurich, Switzerland}
 \phone[mobile]{+41 76 796 9992}
-\email{jkomijani@ethz.ch}
+\email{jkomijani@gmail.com}
 \homepage{jkomijani.github.io}
 % \social[linkedin]{javad-komijani-543a31235}
 
@@ -33,10 +33,10 @@
 % ============================
 \section{Professional Summary}
 
-Computational physicist and scientific machine learning researcher working at the intersection of lattice field theory, mathematical physics, and generative AI. My research develops multi-scale theoretical and computational frameworks based on effective field theory, perturbation theory, and asymptotic analysis. More recently, my work has focused on machine learning methods for lattice field theory.
+Computational physicist and scientific machine learning researcher working at the intersection of lattice field theory, mathematical physics, and generative AI. My research develops multi-scale theoretical and computational frameworks based on effective field theory, perturbation theory, and asymptotic analysis. Since 2022, my work has focused on generative models for lattice field theory.
 
 \vspace{0.5em}
-\textbf{Research impact:} 26 peer-reviewed publications, h-index 19, 3000+ citations.
+\textbf{Research impact:} 27 peer-reviewed publications, h-index 20, 3426 citations (\href{https://scholar.google.com/citations?user=EBV_Sl0AAAAJ&hl=en}{Google Scholar}, Oct 2026).
 
 
 % ============================
@@ -45,30 +45,35 @@ Computational physicist and scientific machine learning researcher working at th
 \begin{itemize}
 
 \item \textbf{Precision lattice QCD and Standard Model parameters:}
-Contributed to high-precision determinations of quark masses, meson decay constants, and hadronic matrix elements through the MILC, Fermilab Lattice, HPQCD, and TUMQCD collaborations. These results are incorporated into global reference averages, including FLAG and the PDG.
-
-\vspace{0.2cm}
+Contributed to high-precision determinations of quark masses, meson decay constants, and hadronic matrix elements through the MILC, Fermilab Lattice, HPQCD, and TUMQCD collaborations. These results are incorporated into global reference averages, including FLAG and the PDG
+[\href{https://doi.org/10.1103/PhysRevD.98.054517}{PRD 98, 054517 (2018)};
+\href{https://doi.org/10.1103/PhysRevD.98.074512}{PRD 98, 074512 (2018)}].
 
 \item \textbf{Effective field theory for multi-scale QFT:}
 Developed and applied effective field theory frameworks (Symanzik EFT, ChPT, HQET) to systematically connect lattice simulations with continuum QCD observables, enabling controlled multi-scale analyses.
 
-\vspace{0.2cm}
-
 \item \textbf{MRS scheme:}
-Developed the minimal renormalon-subtracted (MRS) scheme, providing a systematic treatment of renormalon ambiguities in perturbative QCD without introducing an arbitrary subtraction scale, enabling stable multi-scale analyses and high-precision heavy-quark mass determinations.
+Developed the minimal renormalon-subtracted (MRS) scheme, providing a systematic treatment of renormalon ambiguities in perturbative QCD without introducing an arbitrary subtraction scale, enabling stable multi-scale analyses and high-precision heavy-quark mass determinations
+[\href{https://doi.org/10.1103/PhysRevD.97.034503}{PRD 97, 034503 (2018)}].
 
-\vspace{0.2cm}
+\item \textbf{Diffusion models on Lie groups:}
+Developed an implicit score-matching framework for Lie groups and predictor--corrector samplers with Hamiltonian-dynamics and Langevin correctors for SU($N$) lattice gauge theories
+[\href{https://arxiv.org/abs/2605.06134}{arXiv:2605.06134}];
+introduced a noise schedule on Lie groups that yields a linear decay of the Wilson action with diffusion time
+[\href{https://arxiv.org/abs/2605.17326}{arXiv:2605.17326}];
+co-developed group-equivariant diffusion models for lattice field theory
+[\href{https://doi.org/10.1007/JHEP07(2026)213}{JHEP 07, 213 (2026)}].
 
-\item \textbf{Diffusion models for lattice gauge theory:}
-Developed an implicit score-matching framework for Lie groups, enabling generative modeling for SU($N$) lattice gauge field configurations.
-
-\vspace{0.2cm}
+\item \textbf{Normalizing flows for lattice field theory:}
+Identified the multi-scale structure near critical points as a source of poor scaling of generative models and proposed architectures inspired by effective field theory
+[\href{https://doi.org/10.22323/1.430.0019}{PoS Lattice 2022, 019}];
+introduced SVD-based gauge-equivariant flows for SU($N$) together with a parametrization of SU(3) eigenvalues
+[\href{https://doi.org/10.22323/1.466.0050}{PoS Lattice 2024, 050}];
+reformulated two-dimensional SU($N$) gauge theory as independent plaquettes learned by small spline flows, combined with an exact reweighting
+[\href{https://arxiv.org/abs/2610.09147}{arXiv:2610.09147}].
 
 \item \textbf{Scientific machine learning infrastructure:}
-Developed GPU-accelerated software frameworks for diffusion models, normalizing flows, and differentiable scientific computing.
-
-% \item \textbf{Stable sampling in high-dimensional systems:}
-% Developed predictor--corrector and Hamiltonian-based correction schemes to stabilize diffusion-based sampling in high-dimensional physical systems.
+Developed GPU-accelerated software frameworks for diffusion models, normalizing flows, and differentiable scientific computing (lattice\_ml \& normflow).
 
 \end{itemize}
 
@@ -79,12 +84,15 @@ Developed GPU-accelerated software frameworks for diffusion models, normalizing 
 \begin{itemize}
 
 \item \textbf{Nonlinear eigenvalue problems:}
-Introduced analytical and numerical methods for nonlinear eigenvalue problems arising in nonlinear systems with separatrix structure.
-
-\vspace{0.2cm}
+Introduced analytical and numerical methods for nonlinear eigenvalue problems arising in nonlinear systems with separatrix structure
+[\href{https://doi.org/10.1088/1751-8113/47/23/235204}{J.~Phys.~A 47, 235204 (2014)};
+\href{https://doi.org/10.1088/1751-8121/ac2e29}{J.~Phys.~A 54, 465202 (2021)}].
 
 \item \textbf{Hyperasymptotics:}
-Developed and applied hyperasymptotic and resummation techniques for perturbative expansions in QFT, enabling controlled treatment of divergent series and renormalon ambiguities.
+Developed and applied hyperasymptotic and resummation techniques for perturbative expansions in QFT, enabling controlled treatment of divergent series and renormalon ambiguities
+[\href{https://doi.org/10.1088/1751-8113/47/23/235204}{J.~Phys.~A 47, 235204 (2014)};
+\href{https://doi.org/10.1007/JHEP08(2017)062}{JHEP 08, 062 (2017)};
+\href{https://doi.org/10.1103/PhysRevD.97.034503}{PRD 97, 034503 (2018)}].
 
 % \item \textbf{Multi-scale field theory methods:}
 % Used effective field theory and asymptotic methods to separate physics across multiple scales and connect lattice discretizations with continuum quantum field theory.
@@ -95,7 +103,8 @@ Developed and applied hyperasymptotic and resummation techniques for perturbativ
 \section{Education}
 
 \cventry{2015}{PhD in Physics}{Washington University in St. Louis}{}{}{
-\textbf{Thesis}: \textit{Topics in Lattice Gauge Theory and Theoretical Physics}
+\textbf{Thesis}: \textit{Topics in Lattice Gauge Theory and Theoretical Physics}\\
+\textbf{Advisors}: Claude Bernard and Carl M. Bender
 \begin{itemize}
   \item Developed EFT-based frameworks and Bayesian inference methods for lattice QCD.
   \item Performed precision determinations of hadronic observables in lattice QCD.
@@ -145,14 +154,15 @@ Developed and applied hyperasymptotic and resummation techniques for perturbativ
 % =================================================
 \section{Open-Source Scientific ML Software}
 
-\cventry{\href{https://github.com/jkomijani/lattice_ml}{lattice\_ml}}{Installable Python package for scientific machine learning}{}{}{}{
+\cventry{\href{https://github.com/jkomijani/lattice_ml}{lattice\_ml}}{PyTorch library for ML-assisted sampling in lattice field theory (v0.2.0)}{}{}{}{
 \begin{itemize}
-\item Diffusion-based generative modeling on Lie groups and gauge theories.
-\item Adjoint-based differentiable ODE solvers for scalar and Lie-group-valued systems.
-\item Differentiable SVD and eigendecomposition of unitary matrices.
+\item Diffusion models on Lie groups with predictor--corrector sampling; flow matching for SU($N$).
+\item HMC; adjoint, Lie-group, and symplectic ODE solvers; AD-safe SVD and eigendecomposition.
+\item Gauge-equivariant layers, Lie-group coordinates, random-matrix sampling; distributed training.
 \end{itemize}
 }
-\cvitem{\href{https://github.com/jkomijani/normflow_}{normflow}}{Installable Python package for normalizing flows on Lie groups and lattice gauge theory, including symmetry-preserving transformations and flow-based sampling methods.}
+\cvitem{\href{https://github.com/jkomijani/normflow}{normflow}}{PyTorch package for normalizing flows on Lie groups and lattice gauge theory, including symmetry-preserving transformations and flow-based sampling methods (v3.0.0).}
+\cvitem{\href{https://github.com/jkomijani/holonomy-2d-gauge-notebooks}{Notebooks}}{Reproducible notebooks for arXiv:2610.09147.}
 \cvitem{\href{https://www.intertwin.eu/article/thematic-module-normflow}{interTwin}}{Contributed normalizing-flow-based ML modules to the EU interTwin Digital Twin Engine.}
 
 
@@ -163,13 +173,13 @@ Developed and applied hyperasymptotic and resummation techniques for perturbativ
 
 \cvitem{Programming}{Python, C++, Cython, Bash.}
 
-\cvitem{Scientific Computing}{NumPy, SciPy, Pandas, Monte Carlo Methods, Bayesian Inference, Statistical Modeling, Differentiable ODE Solvers.}
+\cvitem{Scientific Computing}{NumPy, SciPy, Pandas, SQL, Monte Carlo Methods, Bayesian Inference, Statistical Modeling, Differentiable ODE Solvers.}
 
-\cvitem{Infrastructure}{Linux, Git, CUDA, MPI, HPC and Supercomputing Environments (including CSCS).}
+\cvitem{Infrastructure}{Linux, Git, CUDA, MPI, HPC and Supercomputing Environments.}
 
 \cvitem{Mathematics}{Differential Equations, Linear Algebra, Asymptotic Analysis, Optimization.}
 
-
+\clearpage
 % ========================
 \section{Co-supervision and Mentoring}
 
@@ -222,19 +232,19 @@ Theoretical Physics (Fall 2021).
 \end{itemize}
 }
 
-\cvitem{UT}{
+\cvitem{U Tehran}{
 \begin{itemize}
 \item \textbf{Organizer and lecturer:} Workshop on lattice field theory for students (Fall 2019).
 \end{itemize}
 }
 
-\cvitem{UG}{
+\cvitem{U Glasgow}{
 \begin{itemize}
 \item \textbf{Teaching assistant:} C Programming under Linux (Spring 2018).
 \end{itemize}
 }
 
-\cvitem{TUM}{
+\cvitem{TU Munich}{
 \begin{itemize}
 \item \textbf{Teaching assistant:} Particle Physics (Spring 2016) and QFT (Fall 2015).
 \end{itemize}
@@ -254,13 +264,13 @@ Special Relativity (Spring 2011).
 % =============================
 \section{Invited Presentations}
 
-\cvitem{ECT* 2026}{Bridging machine learning and statistical field theory through generative and diffusion processes, ECT* in Trento, Italy, 7--11 Sep, 2026.}
+% \cvitem{ECT* 2026}{Bridging machine learning and statistical field theory through generative and diffusion processes, ECT* in Trento, Italy, 7--11 Sep, 2026.}  % not attended
 
 \cvitem{ECT* 2023}{Machine learning for lattice field theory and beyond, ECT* in Trento, Italy,  26--30 Jun, 2023.}
 
 \cvitem{ETH 2022}{Efficient simulations on GPU hardware, ETH Zurich, 24--27 Oct, 2022.}
 
-\cvitem{$g-2$ 2022}{Fifth Plenary Workshop of the Muon $g-2$ Theory Initiative, Edinburgh,  5--9 Sep,  2022.}
+\cvitem{$g-2$ 2022}{Fifth Plenary Workshop of the Muon $g-2$ Theory Initiative, Edinburgh,  5--9 Sep, 2022.}
 
 \cvitem{CKM 2018}{10th International Workshop on the CKM Unitarity Triangle, Heidelberg, 17--21 Sep, 2018.}
 
@@ -280,7 +290,7 @@ Special Relativity (Spring 2011).
  % =============================
  \section{Professional Service}
  
-\cvitem{Refereeing}{Referee for Physical Review D and Physical Review Letters (13+ reviews since 2016).}
+\cvitem{Refereeing}{Referee for Physical Review D (13+ reviews since 2016).}
  
 \cventry{Organization}{Co-organizer of international and local workshops:}{}{}{}{
 \begin{itemize}
@@ -288,82 +298,107 @@ Special Relativity (Spring 2011).
 \item QCD 2025 — Symposium on QCD Factorization.
 \item ML Lattice 2025 — Machine learning approaches in Lattice QCD.
 \item UT 2019 — Lattice QCD workshop.
-% https://mail.google.com/mail/u/0/#search/Lattice+QCD+Workshop/KtbxLzFrLTdnhBdTbBRtxrgtPRPJMGBRQB
 \item TUM 2017 — EFT and Lattice Field Theory Summer School.
 % webpage: https://users.ph.nat.tum.de/T30f/tumqcd/school/organizers.html
 \end{itemize}
 }
 
 % =============================
+\clearpage
 \section{Selected Publications}
 
-% \cvitem{Research Metrics}{
-% \begin{itemize}
-% \item 26 peer-reviewed publications
-% \item h-index: 19
-% \item 3000+ citations (\href{https://scholar.google.com/citations?user=EBV_Sl0AAAAJ&hl=en}{Google Scholar})
-% \end{itemize}
-% }
-
-% \vspace{0.5cm}
-% Selected Publications:
-
-\vspace{0.2cm}
-
-
+\cvitem{Generative Models}{
 \begin{itemize}
-
 \item
-{J.~Komijani, M.~Marinkovic and L.~Turgut,
-{``Diffusion models for SU($N$) gauge theories,''}
+{J.~Komijani,
+{``Sampling SU($N$) gauge theory on a 2D lattice from independent plaquettes via holonomies and corner reweighting,''}
+[\href{https://arxiv.org/abs/2610.09147}{arXiv:2610.09147}].
+}
+\item
+{J.~Komijani,
+{``Noise scheduling and linear dynamics in diffusion models on Lie groups,''}
+[\href{https://arxiv.org/abs/2605.17326}{arXiv:2605.17326}].
+}
+\item
+{J.~Komijani, M.~K.~Marinkovic and L.~Turgut,
+{``Diffusion model for SU($N$) gauge theories,''}
 [\href{https://arxiv.org/abs/2605.06134}{arXiv:2605.06134}].
 }
-
 \item
-{O.~Vega, J.~Komijani, A.~El-Khadra and M.~Marinkovic,
-{``Group-Equivariant Diffusion Models for Lattice Field Theory,''}
-[\href{https://arxiv.org/abs/2510.26081}{arXiv:2510.26081}].
+{O.~Vega, J.~Komijani, A.~El-Khadra and M.~K.~Marinkovic,
+{``Group-equivariant diffusion models for lattice field theory,''}
+\href{https://doi.org/10.1007/JHEP07(2026)213}{\textit{JHEP 07, 213 (2026)}}.
 }
-
-\vspace{0.2cm}
-
 \item
 {A.~Manzi  \textit{et al.},
-{``interTwin: Advancing Scientific Digital Twins through AI, Federated Computing and Data''},
-\href{https://doi.org/10.1016/j.future.2025.108312}{\textit{Future Generation Computer Systems, 179, 108312 (2026)}}.
+{``interTwin: Advancing Scientific Digital Twins through AI, Federated Computing and Data,''}
+\href{https://doi.org/10.1016/j.future.2025.108312}{\textit{Future Generation Computer Systems 179, 108312 (2026)}}.
 }
-
-% \item {R.~Albert \textit{et al.}, {``The anomalous magnetic moment of the muon in the Standard Model: an update,''} \href{https://doi.org/10.1016/j.physrep.2025.08.002}{\textit{Phys. Rept. 1143, 1-158 (2025)}}.}
-
-% \item { J.~Komijani, {``First-order nonlinear eigenvalue problems involving functions of a general oscillatory behavior,''} \href{https://doi.org/10.1088/1751-8121/ac2e29}{\textit{J.~Phys.~A: Math. and Theor.~54, 465202 (2021)}}.}
-
-\vspace{0.2cm}
-
-\item 
-{ A.~Bazavov \textit{et al.},
-  {``Up-, down-, strange-, charm-, and bottom-quark masses from four-flavor lattice QCD,''}
-  \href{https://doi.org/10.1103/PhysRevD.98.054517}{\textit{Phys.~Rev. D~98, 054517 (2018)}}.
+\item
+{J.~Komijani and M.~K.~Marinkovic,
+{``Normalizing flows for SU($N$) gauge theories employing singular value decomposition,''}
+\href{https://doi.org/10.22323/1.466.0050}{\textit{PoS Lattice 2024, 050}}.
 }
-
-% \item  { N.~Brambilla , J.~Komijani, A.S.~Kronfeld, A.~Vairo, {``Relations between Heavy-light Meson and Quark Masses,''} \href{https://doi.org/10.1103/PhysRevD.97.034503}{\textit{Phys.~Rev. D~97, 034503 (2018)}}.}
- 
-\vspace{0.2cm}
- 
-\item 
-{ J.~Komijani,
-  {``A discussion on leading renormalon in the pole mass,''}
-  \href{https://doi.org/10.1007/JHEP08(2017)062}{\textit{JHEP 1708, 062 (2017)}}.
+\item
+{J.~Komijani and M.~K.~Marinkovic,
+{``Generative models for scalar field theories: how to deal with poor scaling?''}
+\href{https://doi.org/10.22323/1.430.0019}{\textit{PoS Lattice 2022, 019}}.
 }
-
-% \item { C.M.~Bender, A.~Fring and J.~Komijani, {``Nonlinear Eigenvalue Problems,''} \href{https://doi.org/10.1088/1751-8113/47/23/235204}{\textit{J.~Phys.~A: Math. and Theor.~47, 235204 (2014)}}.}
-
-% \item { C.~Bernard and J.~Komijani, {``Chiral Perturbation Theory for All-Staggered Heavy-Light Mesons,''} \href{https://doi.org/10.1103/PhysRevD.88.094017}{\textit{Phys.~Rev. D~88, 094017 (2013)}}.}
-
 \end{itemize}
+}
 
-\vspace{0.5cm}
+\cvitem{Lattice QCD}{
+\begin{itemize}
+\item
+{R.~Aliberti \textit{et al.},
+{``The anomalous magnetic moment of the muon in the Standard Model: an update,''}
+\href{https://doi.org/10.1016/j.physrep.2025.08.002}{\textit{Phys. Rept. 1143, 1--158 (2025)}}.
+}
+\item
+{A.~Bazavov \textit{et al.},
+{``Up-, down-, strange-, charm-, and bottom-quark masses from four-flavor lattice QCD,''}
+\href{https://doi.org/10.1103/PhysRevD.98.054517}{\textit{Phys.~Rev. D~98, 054517 (2018)}}.
+}
+\item
+{A.~Bazavov \textit{et al.},
+{``$B$- and $D$-meson leptonic decay constants from four-flavor lattice QCD,''}
+\href{https://doi.org/10.1103/PhysRevD.98.074512}{\textit{Phys.~Rev. D~98, 074512 (2018)}}.
+}
+\item
+{N.~Brambilla, J.~Komijani, A.S.~Kronfeld and A.~Vairo,
+{``Relations between Heavy-light Meson and Quark Masses,''}
+\href{https://doi.org/10.1103/PhysRevD.97.034503}{\textit{Phys.~Rev. D~97, 034503 (2018)}}.
+}
+\item
+{J.~Komijani,
+{``A discussion on leading renormalon in the pole mass,''}
+\href{https://doi.org/10.1007/JHEP08(2017)062}{\textit{JHEP 08, 062 (2017)}}.
+}
+\item
+{C.~Bernard and J.~Komijani,
+{``Chiral Perturbation Theory for All-Staggered Heavy-Light Mesons,''}
+\href{https://doi.org/10.1103/PhysRevD.88.094017}{\textit{Phys.~Rev. D~88, 094017 (2013)}}.
+}
+\end{itemize}
+}
 
-Full list of peer-reviewed publications: \href{https://jkomijani.github.io/docs/Publications.pdf}{available here}.
+\cvitem{Mathematical Physics}{
+\begin{itemize}
+\item
+{J.~Komijani,
+{``First-order nonlinear eigenvalue problems involving functions of a general oscillatory behavior,''}
+\href{https://doi.org/10.1088/1751-8121/ac2e29}{\textit{J.~Phys.~A: Math. and Theor.~54, 465202 (2021)}}.
+}
+\item
+{C.M.~Bender, A.~Fring and J.~Komijani,
+{``Nonlinear Eigenvalue Problems,''}
+\href{https://doi.org/10.1088/1751-8113/47/23/235204}{\textit{J.~Phys.~A: Math. and Theor.~47, 235204 (2014)}}.
+}
+\end{itemize}
+}
+
+\vspace{0.3cm}
+\cvitem{}{Full list of publications and conference proceedings: \href{https://jkomijani.github.io/docs/Publications.pdf}{available here}.}
 
 
 \end{document}
