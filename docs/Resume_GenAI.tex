@@ -1,0 +1,153 @@
+\PassOptionsToPackage{colorlinks=true,urlcolor=navyblue}{hyperref}
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\usepackage[utf8]{inputenc}
+\usepackage[top=1.3cm,  bottom=1.2cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{multicol}
+
+\definecolor{navyblue}{RGB}{0, 0, 128}
+
+\colorlet{bodyrulecolor}{blue}
+\colorlet{sectioncolor}{blue}
+
+\usepackage{enumitem}  % for item sizes
+\setlist[itemize]{topsep=3pt, itemsep=2pt, parsep=0pt}   % for item sizes
+
+\name{Javad}{Komijani}
+\title{Research Scientist, Generative Models \& Deep Learning}
+\address{Zurich, Switzerland}
+\phone[mobile]{+41 76 796 9992}
+\email{jkomijani@gmail.com}
+\homepage{jkomijani.github.io}
+\social[github]{jkomijani}
+% \social[linkedin]{javad-komijani-543a31235}
+
+
+\begin{document}
+\makecvtitle
+
+
+\section{Professional Summary}
+
+Research scientist in generative modeling with a background in theoretical and computational physics.
+Since 2022, developing diffusion, flow-matching, and normalizing-flow models that respect exact symmetries, for sampling quantum field theories on grids, together with open-source PyTorch software that supports distributed training.
+Earlier work in precision lattice QCD and mathematical physics brings the mathematical depth to design models and make them reliable.
+
+\vspace{0.5em} \textbf{Research impact:} 27 peer-reviewed publications (\href{https://jkomijani.github.io/docs/Publications.pdf}{full list}), h-index 20, 3426 citations (\href{https://scholar.google.com/citations?user=EBV_Sl0AAAAJ&hl=en}{Google Scholar}, Oct 2026).
+
+%--------------------------------------------------
+\section*{Research Highlights}
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Parameter-efficient generative architectures} for physics simulations, where Monte Carlo slows down near critical points, building in exact symmetries:
+    \begin{itemize}
+    \item PSD flow: a Fourier-space layer inspired by effective field theory that reshapes correlations at all scales at once, in a model with only $\sim$3.4K parameters.
+    \item SVD-based gauge-equivariant flows: 
+    a 1288-parameter block on a $4^4$ SU(3) lattice achieves effective sample size comparable to a 288-layer spectral-flow baseline.
+    \end{itemize}
+    \item \textbf{Symmetry-aware diffusion models:}
+    \begin{itemize}
+    \item Equivariant diffusion: reverse-time SDEs from an exact-likelihood ODE to Langevin-corrected sampling; much shorter autocorrelation than Hybrid Monte Carlo (HMC).
+    \item Diffusion on Lie groups: implicit score matching; the SDE family extended to Lie groups; compact gauge-equivariant networks and a multi-scale U-Net.
+    \item Noise schedule on Lie groups: derived analytically; gives linear energy decay and few-step sampling without the hand-designed drift Euclidean models need.
+    \end{itemize}
+    \item \textbf{Machine learning combined with statistics}: symmetries split a sampling problem into independent pieces learned by a tiny flow, plus an exact statistical reweighting that removes the bias; validated against HMC.
+    \item \textbf{Precision physics:} High-precision determinations of Standard Model parameters (quark masses, decay constants) from large-scale lattice simulations in international collaborations, using effective field theories; results in the particle-physics world averages (FLAG, PDG).
+    \item \textbf{Mathematical physics and hyperasymptotics:} Resummation of divergent perturbative series, including the minimal renormalon-subtracted (MRS) scheme used for precise heavy-quark masses; methods for nonlinear eigenvalue problems.
+\end{itemize}
+
+
+\section*{Research \& Technical Experience}
+
+\cventry{2021--2026}{Postdoctoral Researcher}{ETH Zurich}{}{}{
+\begin{itemize}
+\item Developed generative-model methods, open-source software, and distributed-training infrastructure.
+\item Integrated normalizing-flow modules into the EU \href{https://www.intertwin.eu/article/thematic-module-normflow}{interTwin Digital Twin Engine}.
+\item Co-supervised PhD, MSc, BSc, and intern projects in computational physics and scientific ML.
+\end{itemize}
+}
+
+\cventry{2015--2021}{Postdoctoral Researcher}{TU Munich / Glasgow / Tehran}{}{}{
+\begin{itemize}
+\item Monte Carlo simulations and Bayesian parameter estimation for precision lattice-QCD observables.
+\item Developed scalable lattice-QCD simulation pipelines on HPC systems in international collaborations.
+\end{itemize}
+}
+
+
+\clearpage
+%--------------------------------------------------
+\section{Open-Source Scientific ML Software}
+
+\cventry{\href{https://github.com/jkomijani/lattice_ml}{lattice\_ml}}{Composable PyTorch library for lattice field theory (v0.2.0)}{}{}{}{
+\begin{itemize}
+\item Adjoint-method ODE integrators for memory-efficient backpropagation of derivatives through long trajectories, compatible with automatic differentiation, for scalar and Lie-group-valued objects; integrators that stay on the group manifold; symplectic solvers; Hutchinson trace estimation.
+\item Implicit score matching and diffusion on Lie groups with predictor--corrector sampling; flow matching and flow maps.
+\item HMC for U(1) and SU($N$); AD-safe SVD and eigendecomposition; gauge-equivariant layers; prelink and holonomy tools; Lie-group coordinates and random-matrix sampling; distributed training.
+\item Used in arXiv:2605.06134, 2605.17326, and 2610.09147 (\href{https://github.com/jkomijani/holonomy-2d-gauge-notebooks}{reproducible notebooks}).
+\end{itemize}
+}
+\cventry{\href{https://github.com/jkomijani/normflow}{normflow}}{PyTorch package for normalizing flows in lattice field theory (v3.0.0, since 2021)}{}{}{}{
+\begin{itemize}
+\item Scalar and SU($N$) gauge theories; self-learning from the action (reverse KL with path gradients) or data-based training; asymptotically exact sampling via a Metropolis step.
+\item EFT-inspired PSD and Fourier-space flows; coupling, rational-quadratic spline, and autoregressive layers.
+\item Spectral and SVD-based gauge-equivariant flows; distributed training.
+\end{itemize}
+}
+
+
+%--------------------------------------------------
+\section{Technical Skills}
+
+\cvitem{Programming}{Python, C++, Cython, Bash; Linux, Git}
+\cvitem{ML/AI}{PyTorch, Diffusion Models, Flow Matching, Normalizing Flows, Score Matching, Equivariant Deep Learning, Efficient Sampling (HMC, Predictor--Corrector), Distributed Training}
+\cvitem{Mathematics}{Differential Equations, Linear Algebra, Lie Groups, Asymptotic Analysis, Optimization}
+\cvitem{Statistics}{Monte Carlo Methods, Bayesian Inference, Importance Sampling, Statistical Modeling}
+\cvitem{Computing}{CUDA, MPI, HPC and Supercomputing Environments, NumPy, SciPy}
+\cvitem{Languages}{English (fluent), German (basic, A2)}
+
+
+%--------------------------------------------------
+\section*{Mentoring \& Leadership}
+
+\cventry{Mentoring}{Co-supervised PhD, MSc, BSc, and intern researchers in physics \& scientific ML:}{}{}{}{
+\begin{itemize}
+\item PhD (2): gauge-equivariant diffusion models; Fourier acceleration for SU($N$).
+\item MSc (6): equivariant U-Net; autoregressive, continuous-time, and spline-based flows; simulated tempering.
+\item BSc and intern: path-integral Monte Carlo; CNNs in arbitrary dimensions.
+\end{itemize}
+}
+
+\cventry{Organization}{Co-organized workshops on physics \& machine learning:}{}{}{}{
+\begin{itemize}
+\item ZPW 2026 --- Machine Learning Techniques for Particle Physics.
+\item QCD 2025 --- Symposium on QCD Factorization.
+\item ML Lattice 2025 --- Machine learning approaches in Lattice QCD.
+\item UT 2019 --- Lattice QCD workshop; TUM 2017 --- EFT and Lattice Field Theory Summer School.
+\end{itemize}
+}
+
+\cvitem{Refereeing}{Referee for Physical Review D (13+ reviews since 2016).}
+
+%--------------------------------------------------
+\section{Education}
+
+\cventry{2015}{PhD in Physics}{Washington University in St. Louis}{}{}{
+\textbf{Thesis}: \textit{Topics in Lattice Gauge Theory and Theoretical Physics}\\
+\textbf{Advisors}: Claude Bernard and Carl M. Bender
+\begin{itemize}
+  \item Developed EFT-based frameworks and Bayesian inference methods for lattice QCD.
+  \item Performed precision determinations of hadronic observables in lattice QCD.
+  \item Developed a novel definition of eigenvalue problems for nonlinear systems arising in physics.
+\end{itemize}
+}
+\cventry{2009}{MSc in Electrical Engineering}{University of Tehran}{}{}{
+\begin{itemize}
+\item Focus: electromagnetic waves and fields, signal processing, statistical analysis.
+\end{itemize}
+}
+\cventry{2006}{BSc in Electrical Engineering}{University of Tehran}{}{}{}
+
+\end{document}
